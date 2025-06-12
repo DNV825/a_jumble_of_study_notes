@@ -1,8 +1,8 @@
 # Configurations
-title:            Jekyll Gitbook
-longtitle:        Jekyll Gitbook
-author:           HE Tao
-email:            sighingnow@gmail.com
+title:            DNV825 Jekyll Gitbook
+longtitle:        DNV825 Jekyll Gitbook - a jumble study notes
+author:           DNV825
+email:            dnv825.app@gmail.com
 description: >
   Build Jekyll site with the GitBook style.
 
