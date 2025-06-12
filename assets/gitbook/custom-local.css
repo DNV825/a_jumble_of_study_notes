@@ -3,3 +3,8 @@
  * Its purpose is for users of the theme to be able to add css rules from a blank file
  *   these get simply added to the ones already active in the layout.
  */
+
+ /* ホワイトスペース強調の背景を消す場合（特定のテーマ） */
+.highlight .w {
+  background-color: transparent !important;
+}
