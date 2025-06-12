@@ -36,7 +36,7 @@ kramdown:
   syntax_highlighter_opts:
     guess_lang:           true
 
-syntax_highlighter_style: colorful
+syntax_highlighter_style: github
 
 markdown_ext:             markdown,mkdown,mkdn,mkd,md
 
@@ -72,3 +72,7 @@ plugins:
   - jekyll-feed
   - jekyll-readme-index
   - jemoji
+
+# GitHub 相当のコードブロックハイライトを提供する CSS.
+extra_css:
+  - "https://cdn.jsdelivr.net/gh/mzlogin/rouge-themes@master/github.css"
