@@ -15,3 +15,5 @@ Make Jelly site have a GitBook look!
   [![Jekyll Themes](https://img.shields.io/badge/featured%20on-JekyllThemes-red.svg)](https://jekyll-themes.com/jekyll-gitbook/)
 - JekyllでMathJaxからKaTeXに移行した ← これは大変そうなので未実施  
   <https://tex2e.github.io/blog/latex/mathjax-to-katex>
+- Github PagesでKatexを使ったときのメモ  
+  <https://qiita.com/psymonmarkrine/items/832cd509a39b40ea0a86>
