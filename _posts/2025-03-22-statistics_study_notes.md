@@ -31,11 +31,13 @@ JavaScript で tikz を利用可能にするもの。すごい。参考：<https
 </script>
 ```
 
+{% raw %}
 <script type="text/tikz">
 \begin{tikzpicture}
 \draw (0,0) circle (1in);
 \end{tikzpicture}
 </script>
+{% endraw %}
 
 ## 指数と対数
 
