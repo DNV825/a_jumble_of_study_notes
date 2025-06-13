@@ -1,9 +1,9 @@
 ---
 title: About
-author: Tao He
-date: 2022-02-04
+author: DNV825
+date: 2025-06-13
 category: Jekyll
 layout: post
 ---
 
-This is an about page.
+- <https://github.com/DNV825/a_jumble_of_study_notes>
