@@ -8,6 +8,10 @@ Make Jelly site have a GitBook look!
 
 ## Jekyll の参考資料
 
+Jekyll については全然わからない。GitHub Pages でテーマを動かすことができたので、それにのっかっているだけ。
+
+- Jekyll  
+  <https://jekyllrb.com/>
 - Jekyll Gitbook Theme  
   <https://github.com/sighingnow/jekyll-gitbook/tree/master>
 - Live demo on Github Pages  
