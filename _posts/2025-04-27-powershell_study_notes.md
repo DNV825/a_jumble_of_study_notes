@@ -192,12 +192,20 @@ PowerShellでは、#で1行コメント、<#～#>で複数行コメントを表�
 
 エスケープ文字たち。PowerShellでは \`(アクサングラーブ) をプレフィックスにして表現する。
 
-| 文字 | 意味 | 文字 | 意味 | 文字 | 意味 |
-| --- | --- | --- | --- | --- | --- |
-| \`$ | ドルマーク | \`n | 改行 | \`" | ダブルクォーテーション |
-| \`0 | Null | \`r | キャリッジリターン | \`\` | アクサングラーブ |
-| \`a | 警告 | \`t | 水平タブ | \`f | 用紙送り（フォームフィード） |
-| \`b | バックスペース | \`' | シングルクォーテーション | \`v | 垂直タブ |
+| 文字 | 意味 |
+| --- | --- |
+| \`$ | ドルマーク |
+| \`n | 改行 |
+| \`" | ダブルクォーテーション |
+| \`0 | Null |
+| \`r | キャリッジリターン |
+| \`\` | アクサングラーブ |
+| \`a | 警告 |
+| \`t | 水平タブ |
+| \`f | 用紙送り（フォームフィード） |
+| \`b | バックスペース |
+| \`' | シングルクォーテーション |
+| \`v | 垂直タブ |
 
 ### 行継続文字 `
 
@@ -286,8 +294,8 @@ PowerShellの演算子による演算で右辺と左辺の型が異なる場合�
 文字列の比較に -eq を用いると、大文字と小文字を区別しないで比較する。
 大文字小文字を区別したいのであれば -ceq のように頭に c をつけた演算子を用いる。
 
--match演算子で一致した結果はシェル変数 $matches に格納される。
-$matchesの実態は連想配列で、キーの 0 にマッチした文字列全体、1～サブ式の個数までサブマッチ文字列が格納される。
+-match 演算子で一致した結果はシェル変数 \$matches に格納される。
+\$matches の実態は連想配列で、キーの 0 にマッチした文字列全体、 1 ～ サブ式の個数までサブマッチ文字列が格納される。
 
 ```powershell
 PS> "abcde" -match "(.)(.)(.)"
@@ -331,7 +339,7 @@ PS> "abcde" -replace "(.)(.)(.)(.)(.)", "`$5`$4`$3`$2`$1"
 edcba
 ```
 
--matchも-replaceも大文字小文字を区別しない。区別したい場合は先頭にcをつけて -clike のように用いればよい。
+-match も -replace も大文字小文字を区別しない。区別したい場合は先頭に c をつけて  -clike のように用いればよい。
 
 -f 演算子は以下のように用いる。
 
@@ -342,8 +350,8 @@ PS> "{0:#0.#}" -f (1/3)
 0.3
 ```
 
-左辺に "{右辺の配列のインデックス:書式}" のように指定するのがポイントで、書式は.NET Frameworkのフォーマット文字列に準拠する。
-MSDNライブラリの「カスタム数値書式指定文字列」や「DateTime書式指定文字列」などのトピックを参照すると良い。
+左辺に "{右辺の配列のインデックス:書式}" のように指定するのがポイントで、書式は .NET Framework のフォーマット文字列に準拠する。
+MSDN ライブラリの「カスタム数値書式指定文字列」や「 DateTime 書式指定文字列」などのトピックを参照すると良い。
 
 ### 配列 @()
 
@@ -365,7 +373,7 @@ PS> $arr
 7
 8
 9
-PS> $arr.length      # 配列の要素数はlengthで取得する。
+PS> $arr.length      # 配列の要素数は length で取得する。
 5                    # [0]～[4]で5個。
 PS> $arr[2..4]       # 配列の部分集合を取り出すことも可能。これを「配列のスライス」と呼ぶ。
 7
@@ -375,15 +383,15 @@ PS> $a, $b = $arr[0..1] # 配列を使った変数代入も可能。
 PS> $a; $b
 5
 6
-PS> $arr -gt 7       # 比較結果が$Trueの要素だけを取り出せる。
+PS> $arr -gt 7       # 比較結果が $True の要素だけを取り出せる。
 8
 9
-PS> $arr = @(1)      # 要素が1つだけの配列を作るときは@を使う。
+PS> $arr = @(1)      # 要素が 1 つだけの配列を作るときは@を使う。
 PS> $arr = @()       # 要素が空の配列を作るときも@を使う。
 ```
 
-戻り値が配列か単一のオブジェクトか不明なだが「必ず配列として変数に代入したい場合に
-@()を使うと良い。
+戻り値が配列か単一のオブジェクトか不明なだが「必ず配列として変数に代入したい場合に 
+@() を使うと良い。
 
 ```powershell
 PS> $file = @(Get-ChildItem te*)
@@ -391,13 +399,16 @@ PS> $file = @(Get-ChildItem te*)
 
 ### 連想配列 @{}
 
-スプラッティング記号 (@) を用いると連想配列を作成でき、同様に変数名に@を用いると
+スプラッティング記号 ( @ ) を用いると連想配列を作成でき、同様に変数名に @ を用いると
 パラメーターとして渡すことができる。
 
 連想配列の定義リテラルは
-  $変数名 = @{キー1の名前 = キー1の値; キー2の名前 = キー2の値; ...}
 
-```PowerShell
+```powershell
+$変数名 = @{キー1の名前 = キー1の値; キー2の名前 = キー2の値; ...}
+```
+
+```powershell
 PS> $params = @{logname = "Application"; Newest = 5}
 PS> Get-Eventlog @params # Get-Eventlog -logname "Application" -Newest 5 と同様の意味になる。
 PS> $params.logname      # キー名で値を取得できる。
@@ -406,13 +417,11 @@ PS> $params["Newest"]    # ブラケットでも取得可能。
 5
 ```
 
-連想配列は.NET FrameworkのHashtableクラスのインスタンス。
-キーの格納順序は保証されない。
+連想配列は .NET Framework の Hashtable クラスのインスタンス。キーの格納順序は保証されない。
 
-ただし、Powershell3.0から[ordered]属性をつけて連想配列リテラルを記述するとHashtableではなくOrderedDictionaryという
-キーの順序が保持される特殊な連想配列を作成できる。
+ただし、 PowerShell 3.0 から [ordered] 属性をつけて連想配列リテラルを記述すると Hashtable ではなく OrderedDictionary というキーの順序が保持される特殊な連想配列を作成できる。
 
-また、Powershell3.0から連想配列を[pscustomobject]にキャスト可能になったため、ユーザー定義オブジェクトを簡単に作成できる。
+また、 PowerShell 3.0 から連想配列を [pscustomobject] にキャスト可能になったため、ユーザー定義オブジェクトを簡単に作成できる。
 
 ```powershell
 PS> $orderedDictionary = [ordered]@{a=1;b=2}
@@ -425,21 +434,19 @@ a b             cde
 
 ### リダイレクト >
 
-コマンドプロンプトと同じくストリームのリダイレクトが可能で、リダイレクト演算子を用いる。
-リダイレクトでファイルを出力sるうと、UTF-16で書きこまれる。
-文字コードを指定するのであれば Out-File コマンドレットを利用すればよい。
+コマンドプロンプトと同じくストリームのリダイレクトが可能で、リダイレクト演算子を用いる。リダイレクトでファイルを出力sるうと、UTF-16 で書きこまれる。文字コードを指定するのであれば Out-File コマンドレットを利用すればよい。
 
 | リダイレクト演算子 | 効果 |
 | --- | --- |
 | > | ファイルにコマンドの出力を保存（内容は上書き） |
-| >> | ファイルの末尾にコマンドの出力を追記 |
+| \>\> | ファイルの末尾にコマンドの出力を追記 |
 | n> | ファイルに n の出力を保存（内容は上書き） |
-| n>> | ファイルの末尾に n の出力を追記 |
-| n>&1 | nの出力をコマンドの出力に追加する。 |
+| n\>\> | ファイルの末尾に n の出力を追記 |
+| n>&1 | n の出力をコマンドの出力に追加する。 |
 
 | ストリーム名 | ストリーム番号 | 対応コマンドレット |
 | --- | --- | --- |
-| 標準 | 1（nには指定不可） | コマンドレットすべて。明示的にするなら Write-Output を用いる |
+| 標準 | 1（ n には指定不可） | コマンドレットすべて。明示的にするなら Write-Output を用いる |
 | エラー | 2 | Write-Error |
 | 警告 | 3 | Write-Warning |
 | 詳細 | 4 | Write-Verbose |
@@ -456,17 +463,14 @@ PS> Get-Service Bits,not_existed_name,DHCP 2>&1 > service.txt # エラー内容�
 
 ### パイプライン \|
 
-Powershellはコマンドをパイプライン記号（|）で連結して、連携させることができる。
+PowerShell はコマンドをパイプライン記号（ | ）で連結して、連携させることができる。
 つまり、コマンドの出力はパイプラインを通じて後続コマンドの入力とみなすことができる。
 
-パイプラインにはプロパティやメソッドを持つオブジェクトが渡るので、パイプラインで渡した後続のコマンドで
-それらのオブジェクトのメンバーを参照できる。
+パイプラインにはプロパティやメソッドを持つオブジェクトが渡るので、パイプラインで渡した後続のコマンドでそれらのオブジェクトのメンバーを参照できる。
 
-配列をパイプすると、配列の1つ1つの要素を順番に処理していき
-その動作を配列の要素分繰り返す点に注意が必要。
+配列をパイプすると、配列の 1 つ 1 つの要素を順番に処理していき、その動作を配列の要素分繰り返す点に注意が必要。
 
-パイプラインから入力されたオブジェクトは、コマンドレットの「パイプライン入力を許可する：true(By Value)」フラグのついたパラメーターに渡される。
-ほかに「パイプライン入力を許可する:true(ByPropertyName)というフラグもあり、これはパラメーターと同名のプロパティ名の値が渡される。
+パイプラインから入力されたオブジェクトは、コマンドレットの「パイプライン入力を許可する：true (By Value)」フラグのついたパラメーターに渡される。ほかに「パイプライン入力を許可する:true(ByPropertyName)というフラグもあり、これはパラメーターと同名のプロパティ名の値が渡される。
 
 Where-Object コマンドレットを用いると入力オブジェクトにフィルターをかけられる。
 
@@ -476,8 +480,7 @@ PS> Get-ChildItem | Where-Object { $_.Length -gt 1KB }
 
 ### 型
 
-型として.NET Frameworkのオブジェクトを利用できる。
-Powershellでは動的型付けが行われ、内部的には正しい方として取り扱われる。
+型として .NET Framework のオブジェクトを利用できる。 PowerShellでは動的型付けが行われ、内部的には正しい方として取り扱われる。
 
 オブジェクトの型を調べるには
 
@@ -493,13 +496,16 @@ System.Int32
 のいずれかを実行すれば良い。
 
 ただ、動的型付けはバグの元でもあり、型を指定したいケースも多々ある。
+
 PowerShellでは
 
+```powershell
 [型名]$変数名 = 値
+```
 
 とすることで型を定めた宣言が可能。
-ちなみに、PowershellではSystem.Int32の「System.」は省略できる。
-さらに簡単なエイリアスが用意されているので、それで型名を指定するのが良いだろう。
+
+ちなみに、 PowerShell では `System.Int32` の「`System.`」は省略できる。簡単なエイリアスが用意されているので、そちらで型名を指定するのが良いだろう。
 
 「ある型であるか」を調べるには -is 演算子を使えばよい。
 
@@ -512,29 +518,29 @@ True
 ### 型変換
 
 算術演算子は左辺値と右辺値の型が異なる場合、右辺値の型を左辺値の型に型変換した後に演算を行う。
-明示的な型変換を行う場合、変数や値の前に[型]をつければよい。
+
+明示的な型変換を行う場合、変数や値の前に `[型]` をつければよい。
 
 ```powershell
 PS> [System.DateTime]"2018/12/20"
 ```
 
 型キャスト出来ない場合はエラーになる。
--as 演算子を使っても型キャストできるが、型キャストできない場合こちらは$Nullを返却する。
 
-[System.Void]に型キャストすると値の出力を抑制できる。
-この動作は、Out-Null コマンドレットにオブジェクトをパイプするときの動作と同じ。
+-as 演算子を使っても型キャストできるが、型キャストできない場合こちらは `$Null` を返却する。
+
+`[System.Void]`に型キャストすると値の出力を抑制できる。この動作は、Out-Null コマンドレットにオブジェクトをパイプするときの動作と同じ。
 
 ### インスタンスメンバーの呼び出し
 
-Powershellでは「型アダプタ」という仕組みを用いて、オブジェクトの種類が.NET・COM・XMLのノード…などであっても
-それらのメンバーをドット演算子で呼び出すことができる。
+PowerShell では「型アダプタ」という仕組みを用いて、オブジェクトの種類が .NET ・ COM ・ XML のノードなどであっても、それらのメンバーをドット演算子で呼び出すことができる。
 
 オブジェクトの型・どのようなメンバーを持つかを調べるには Get-Member コマンドレットを用いる。
+
 説明が長すぎて省略されている場合、Format-List コマンドレットにパイプすればよい。
 
 ```powershell
 PS > $arr | Get-Member -Name ToString | Format-List
-
 
 TypeName   : System.Int32
 Name       : ToString
@@ -544,12 +550,14 @@ Definition : string ToString(), string ToString(string format), string ToString(
              stem.IFormatProvider formatProvider), string IConvertible.ToString(System.IFormatProvider provider)
 ```
 
-パラメーター付きプロパティ（C#でいうインデクサ、VBでいうインデックス付きプロパティ）の参照方法は次の通り。
+パラメーター付きプロパティ（ C# でいうインデクサ、 VB でいうインデックス付きプロパティ）の参照方法は次の通り。
 
+```powershell
 変数など.パラメーター付きプロパティ名(パラメーター)
 変数など[パラメーター]
+```
 
-XmlDocumentオブジェクトのItemプロパティ（パラメーター付きプロパティ）を参照する例を示す。
+XmlDocument オブジェクトの Item プロパティ（パラメーター付きプロパティ）を参照する例を示す。
 
 ```powershell
 PS > $xml = [xml]"<root><x>a1</x><x>a2</x></root>"
@@ -562,23 +570,22 @@ x
 
 ### スタティックメンバーの呼び出し
 
-スタティックメンバー（インスタンスを作らなくてもアクセスできるメンバー）へのアクセスは :: 演算子を使う。
-スタティックメンバーを調べるには、Get-Member -Static をパイプすればよい。
+スタティックメンバー（インスタンスを作らなくてもアクセスできるメンバー）へのアクセスは :: 演算子を使う。スタティックメンバーを調べるには、Get-Member -Static をパイプすればよい。
 
-ちなみに、PowerShellは.NET Frameworkの列挙体のメンバ名をstring型値と相互変換できる。
-そのため、以下の2文は同じ意味となる。
+ちなみに、PowerShell は .NET Framework の列挙体のメンバ名を string 型値と相互変換できる。
+
+そのため、以下の 2 文は同じ意味となる。
 
 ```powershell
 PS> $file.Attributes = [System.IO.FileAttributes]::Hidden
-PS> $file.Attributs = "Hidden"
+PS> $file.Attributes = "Hidden"
 ```
 
-## PowerShellの文法
+## PowerShell の文法
 
-条件分岐や繰り返し、エラーキャッチ方法。
-ちなみに、式（Expressiont）と文（Statement）を認識すると理解しやすい。
+条件分岐や繰り返し、エラーキャッチ方法。ちなみに、式（ Expression ）と文（ Statement ）を認識すると理解しやすい。
 
-### if～elseif～elseif
+### if ～ elseif ～ elseif
 
 ```powershell
 PS> $a = 1
@@ -593,7 +600,7 @@ PS>   Write-Host "???"
 PS> }
 ```
 
-### switch～{～;break}default{}
+### switch ～ { ～ ; break } default {}
 
 ```powershell
 PS> $a = 6
@@ -606,11 +613,9 @@ PS>   default { Write-Host "$a is other value."}
 PS> }
 ```
 
-breakはswitchを抜けるための構文。
-C言語とは異なり、breakがなかったら次の式を評価するというわけでもない。
+break は switch を抜けるための構文。C言語とは異なり、break がなかったら次の式を評価するというわけではない。
 
-値を指定する部分にスクリプトブロックを指定することも可能。
-現在評価中の値ということで、$_ を使える。
+値を指定する部分にスクリプトブロックを指定することも可能。現在評価中の値ということで、$_ を使える。
 
 ```powershell
 PS> $a = 6
@@ -622,9 +627,7 @@ PS>   default { Write-Host "$_ is other value."}
 PS> }
 ```
 
-配列も渡すことができる。
-配列の要素1つ1つに対して処理を行うには、以下のようにbreak文を書かないこと。
-（breakでswitchを抜けてしまうので1つ1つに処理できなくなってしまう。）
+配列も渡すことができる。配列の要素 1 つ 1 つに対して処理を行うには、以下のようにbreak 文を書かないこと（ break で switch を抜けてしまうので 1 つ 1 つに処理できなくなってしまう。）
 
 ```powershell
 PS> $a = 3..7
@@ -636,10 +639,10 @@ PS>   default { Write-Host "$_ is other value."}
 PS> }
 ```
 
-switchには以下のパラメーターを指定できる。
+switch には以下のパラメーターを指定できる。
 
 | パラメーター | 意味 |
-| --- |
+| --- | --- |
 | -regex | 文字列を正規表現で評価する |
 | -wildcard | 文字列をワイルドカードで評価する |
 | -exact | 文字列を完全一致で評価する |
@@ -693,9 +696,9 @@ while ($True) {
 $str
 ```
 
-ループステートメントはネスト出来るので、内側のループを抜ける際に外側のループも一緒に抜けたい場合
-あらかじめラベルをつけておき、ラベルをbreakすればそこにジャンプできる。
-ラベルは :ラベル のようにコロン1つから始める。
+ループステートメントはネスト出来るので、内側のループを抜ける際に外側のループも一緒に抜けたい場合、あらかじめ該当箇所へラベルをつけておき、ラベルを break すればそこにジャンプできる。
+
+ラベルは `:ラベル` のようにコロン1つから始める。
 
 ```powershell
 :outer
@@ -734,8 +737,7 @@ foreach ($process in Get-Process) {
 }
 ```
 
-ForEach-Object コマンドレットを利用すると以下のようになる。
-foreachと%はエイリアス。パイプで渡すときはこっち。
+ForEach-Object コマンドレットを利用すると以下のようになる。 foreach と % はエイリアス。パイプで渡すときはこっちを使う方が簡単。
 
 ```powershell
 Get-Process | foreach { $_.Name }
@@ -743,12 +745,11 @@ Get-Process | % { $_.Name }
 (Get-Process).Name
 ```
 
-3番目の例のような書き方でも行ける。
-Get-Processの実行結果オブジェクトのプロパティを指定して取り出している、ということ。
+3 番目の例のような書き方でも行ける。これは「Get-Processの実行結果オブジェクトのプロパティを指定して取り出す」、という意味になる。
 
 ### function
 
-PowerShellの関数はfunctionブロックでの実行結果、コンソールに出力されるはずの値が戻り値となる。
+PowerShell の関数は function ブロックでの実行結果、コンソールに出力されるはずの値が戻り値となる。
 
 ```powershell
 function Get-Today {
@@ -756,8 +757,7 @@ function Get-Today {
 }
 ```
 
-returnキーワードを使うと、その値を返すとともにそこで関数を終了する。
-returnとだけ記述するとそこで関数が終わる。
+return キーワードを使うと、その値を返すとともにそこで関数を終了する。 return とだけ記述するとそこで関数が終わる。
 
 ```powershell
 function Get-Today-Failed{
@@ -767,7 +767,8 @@ function Get-Today-Failed{
 ```
 
 なお、コンソールに出力する値が複数ある場合、呼び出し元にはそれらすべての値を返す（途中で「return」したらそこまでの値を返す。「return 値」ならその値を返す。）
-返したくない値が関数内で出力される場合、その値を[void]にキャストすれば返さなくなる。
+
+返したくない値が関数内で出力される場合、その値を [void] にキャストすれば返さなくなる。
 
 ```powershell
 function Get-RecentDay{
@@ -792,9 +793,7 @@ PS> $ret
 
 #### 関数の引数
 
-呼び出し側でパラメーターを関数に与えることができる。
-その際、自動変数 $args にパラメーター名が指定されていないものが配列として格納される。
-パラメーターが指定されたものはその名前で受け付ける。
+呼び出し側でパラメーターを関数に与えることができる。その際、自動変数 $args にパラメーター名が指定されていないものが配列として格納される。パラメーターが指定されたものはその名前で受け付ける。
 
 ```powershell
 function Get-Sum{
@@ -808,9 +807,7 @@ PS> Get-Sum 1 2 3 4
 10
 ```
 
-パラメーターの名前と数を指定することも可能。
-パラメーター名を指定する場合は -変数名 で指定する。
-パラメーター名を指定する場合、引数の順序は考慮不要。
+パラメーターの名前と数を指定することも可能。パラメーター名を指定する場合は `-変数名` で指定する。パラメーター名を指定する場合、引数の順序は考慮不要。
 
 ```powershell
 function Get-Division ($left, $right) {
@@ -822,11 +819,10 @@ PS> Get-Division -right 2 -left 10
 5
 ```
 
-なお、渡された引数は自動変数 $PSBoundParametersに連想配列として格納されているので
+なお、渡された引数は自動変数 $PSBoundParameters に連想配列として格納されているので
 これを関数内から参照しても良い。
 
-関数のパラメーターを param キーワードに記述することもできる。
-型を指定することもできる。
+関数のパラメーターを param キーワードに記述することもできる。この時に型を指定することもできる。
 
 ```powershell
 function Get-Division{
@@ -835,11 +831,12 @@ function Get-Division{
 }
 ```
 
-特殊な型として[switch]がある。これを指定すると
-    - 呼び出し側でパラメーターを指定していれば $True
-    - 呼び出し側でパラメーターを指定していなければ $False
-をセットするようになる。
-呼び出し側はパラメーターを指定しなくてよい。
+特殊な型として [switch] がある。これを指定すると
+
+- 呼び出し側でパラメーターを指定していれば $True
+- 呼び出し側でパラメーターを指定していなければ $False
+
+をセットするようになる。 $False をセットしたい場合、呼び出し側はパラメーターを指定しなくてよい。
 
 ```powershell
 function Check-Parameter {
@@ -859,7 +856,7 @@ IsPresent
 False
 ```
 
-パラメーターは値渡しになるが、特殊な方[ref]を指定すると参照渡しになる。
+パラメーターは通常値渡しになる。特殊な型 [ref] を指定すると参照渡しになる。
 
 PowerShellの関数はデフォルト引数に対応している。
 
@@ -870,7 +867,7 @@ function Get-Division {
 }
 ```
 
-paramキーワードはスクリプトファイルやスクリプトブロックにも定義できる。
+param キーワードはスクリプトファイルやスクリプトブロックにも定義できる。
 
 #### 関数とパイプライン
 
@@ -910,14 +907,11 @@ PS> 7, 11, 5 | Show-Value
 以上。
 ```
 
-beginは最初の1回だけ、endは最後の1回だけ呼び出される。
-processはそれ以外に呼び出される。
-自動変数 $_ にはその時点の入力オブジェクトが格納されている。
+begin は最初の 1 回だけ、 end は最後の1回だけ呼び出される。process はそれ以外に呼び出される。自動変数 $_ にはその時点の入力オブジェクトが格納されている。
 
-begin、process、endはスクリプトブロックにも定義できる。
+begin 、 process 、 end はスクリプトブロックにも定義できる。
 
-コマンドレットパラメーターの「パイプライン入力を許可する」フラグに相当するものを記述する場合
-高度な関数の構文を使う必要がある。
+コマンドレットパラメーターの「パイプライン入力を許可する」フラグに相当するものを記述する場合、[高度な関数](#高度な関数)の構文を使う必要がある。
 
 #### フィルター
 
@@ -941,30 +935,80 @@ PS> 1, 2, 3, 4, 5 | Get-Odd
 
 #### スクリプトブロック
 
-PowerShellにおける匿名関数に相当するものをスクリプトブロックと呼ぶ。
-  {スクリプトブロック}
+PowerShell における匿名関数に相当するものをスクリプトブロックと呼ぶ。
+
+```powershell
+{スクリプトブロック}
+```
+
 のようなリテラルで記述できる。
 
-スクリプトブロックは変数に代入したり、コマンドレットのパラメーターに指定したりできる。
+スクリプトブロックは変数に代入したり、コマンドレットのパラメーターに指定したりできる。スクリプトブロックを関数のように実行したければ、呼び出し演算子 & を用いて
 
-スクリプトブロックを関数のように実行したければ、呼び出し演算子 & を用いて
-
-  &{スクリプトブロック}
+```powershell
+&{スクリプトブロック}
+```
 
 とすればよい。
 
-スクリプトブロックは匿名関数のようなものなので、param、begin、process、endステートメントの構文は同じように使える。
+スクリプトブロックは匿名関数のようなものなので、param 、 begin 、 process 、 end ステートメントの構文は同じように使える。
 
 #### デフォルト定義関数
 
-Get-ChildItem function: とするとデフォルトで定義された関数を一覧表示できる。
+`Get-ChildItem function:` のように、コマンドレットに `function:" を渡して実行すると、デフォルトで定義された関数を一覧表示できる。
+
+```powershell
+PS > Get-ChildItem function:
+
+CommandType     Name                                               Version    Source
+-----------     ----                                               -------    ------
+Function        A:
+Function        B:
+Function        C:
+Function        cd..
+Function        cd\
+Function        Clear-Host
+Function        D:
+Function        E:
+Function        F:
+Function        G:
+Function        Get-Verb
+Function        H:
+Function        help
+Function        I:
+Function        ImportSystemModules
+Function        J:
+Function        K:
+Function        L:
+Function        M:
+Function        mkdir
+Function        more
+Function        N:
+Function        O:
+Function        oss
+Function        P:
+Function        Pause
+Function        prompt
+Function        PSConsoleHostReadLine                              2.0.0      PSReadLine
+Function        Q:
+Function        R:
+Function        S:
+Function        T:
+Function        TabExpansion2
+Function        U:
+Function        V:
+Function        W:
+Function        X:
+Function        Y:
+Function        Z:
+```
 
 ### 高度な関数
 
-関数に様々な属性を付与することで通常の関数よりも高度な機能を持たせたものを「高度な関数」と呼ぶ。
-本来、コマンドレットはC#で記述するのだが、高度な関数であればPowerShellスクリプトで記述でき、かつコマンドレットと同等の機能を持たせることが可能。
+関数に様々な属性を付与することで通常の関数よりも高度な機能を持たせたものを「高度な関数」と呼ぶ。本来、コマンドレットは C# で記述するのだが、高度な関数であれば PowerShell スクリプトで記述でき、かつコマンドレットと同等の機能を持たせることが可能。
 
-通常の関数に [CmdletBinding]属性を付与することでその関数は高度な関数となる。細かい話は about_functions_advanced を参照。
+通常の関数に [CmdletBinding] 属性を付与することでその関数は高度な関数となる。細かい話は [about_functions_advanced](https://learn.microsoft.com/ja-jp/powershell/module/microsoft.powershell.core/about/about_functions_advanced?view=powershell-7.5) を参照。
+
 最も基本的な構文は以下の通り。
 
 ```powershell
@@ -975,12 +1019,12 @@ function 高度な関数名 {
 }
 ```
 
-ComdletBinding属性に指定できる内容は以下の通り。
+ComdletBinding 属性に指定できる内容は以下の通り。
 
 | CmdletBinding属性の属性パラメーター | 意味（カッコ内は指定できる値） |
 | --- | --- |
-| SupportsShouldProcess | -Whatlf、-Confirmパラメーターを利用可能にするかどうか（$True/$False） |
-| SupportsPaging | -First、-Skip、-IncludeTotalCountパラメーターを利用可能にするかどううか（$True/$False） |
+| SupportsShouldProcess | -Whatlf 、 -Confirm パラメーターを利用可能にするかどうか（$True/$False） |
+| SupportsPaging | -First 、 -Skip 、 -IncludeTotalCount パラメーターを利用可能にするかどううか（$True/$False） |
 | SupportsTransactions | トランザクションが有効かどうか（$True/$False） |
 | PositionalBinding | 位置パラメーターを有効にするか（$True/$False） |
 | DefaultParameterSetName | パラメーターセットが解決できない場合に利用するパラメーターセット名 |
@@ -1001,19 +1045,13 @@ function Get-Test {
 
 #### 高度な関数のパラメーター
 
-通常の関数ではパラメーターとその属性を定義できるが、高度な関数はそれに加えてパラメーター属性というものを設定でき、
-パラメータごとに様々な振る舞いを指定できる。
+通常の関数ではパラメーターとその属性を定義できるが、高度な関数はそれに加えてパラメーター属性というものを設定でき、パラメータごとに様々な振る舞いを指定できる。
 
 また、パラメーター検証属性を用いることで、パラメーターとして指定された値が妥当であるかを高度な関数実行前に事前検証できる。
 
 #### 高度な関数のヘルプ
 
-いわゆるコメントベースのヘルプを記載できる。
-ヘルプの about_comment_based_help を参照すれば詳しい書式を確認できる。
-
-コメントベースのヘルプについては以下を参照。
-
-<https://docs.microsoft.com/ja-jp/powershell/scripting/developer/help/examples-of-comment-based-help?view=powershell-7>
+いわゆるコメントベースのヘルプを記載できる。コメントベースのヘルプについては [about_comment_based_help](https://docs.microsoft.com/ja-jp/powershell/scripting/developer/help/examples-of-comment-based-help?view=powershell-7) を参照。
 
 ```powershell
 <#
@@ -1021,8 +1059,8 @@ function Get-Test {
   プロンプトとファイルにメッセージをエコー。
 
   .description
-  $IsOutputLogFileが$Trueの場合、プロンプトとファイルにメッセージをエコーする。
-  $Falseの場合はプロンプトだけにメッセージをエコーする。
+  $IsOutputLogFile が $True の場合、プロンプトとファイルにメッセージをエコーする。
+  $False の場合はプロンプトだけにメッセージをエコーする。
   ファイルへのエコーは常時追記とするため、関数実行前にファイルの初期化処理が必要。
 
   .parameter message
@@ -1055,36 +1093,33 @@ A
 
 ## 非同期処理
 
-JobsとRunSpaces
+Jobs と RunSpaces
 
 ## その他ノウハウ
 
 ### オブジェクトのメンバーを一覧化
 
-Get-Memberを実行すればよい。
+Get-Member を実行すればよい。
 
 ### インプットとアウトプット
 
-read-host と write-host を使える。
-ただ、スクリプトを呼び出す場合はread-hostが使えないっぽい。
+read-host と write-host を使える。ただ、スクリプトを呼び出す場合は read-host が使えないっぽい。
 
 ### パスワードの暗号化
 
-get-credentialでも作れるが、パスワードの入力が必要となる。
-そのため、
+get-credential でも作れるが、パスワードの入力が必要となる。そのため、
 
 ```powershell
 $credential = New-Object -type System.​Management.​Automation.PSCredential -argumentlit ユーザー名,パスワード
 ```
 
-という形でユーザー名とパスワードを記載する。
-ただ、ユーザー名とパスワードは平文になるので、スクリプトの扱いには要注意。
+という形でユーザー名とパスワードを記載する。ただ、ユーザー名とパスワードは平文になるので、スクリプトの扱いには要注意。
 
 ### Windows Runtime（WinRT）を利用する
 
-Windows Runtime (WinRT) とは、Windows8で実装されたModern UIスタイルのアプリケーションを実装するためのAPIのこと。
-PowerShellでWinRT APIを利用するためには明示的な参照が必要。
-以下のように参照することで、スクリプト中でWinRT APIを利用することができる。
+Windows Runtime (WinRT) とは、Windows 8 で実装された Modern UI スタイルのアプリケーションを実装するためのAPIのこと。PowerShell で WinRT API を利用するためには明示的な参照が必要。
+
+以下のように参照することで、スクリプト中で WinRT API を利用することができる。
 
 ```powershell
 # [class, namespace, ContentType = WindowsRuntime]
@@ -1093,7 +1128,7 @@ PowerShellでWinRT APIを利用するためには明示的な参照が必要。
 
 `ContentType = WindowsRuntime` が重要！
 
-以下、1番目の参考URLからコピペしたもの。これを改造すれば、スクリプト呼び出し時に表示内容を変更できるようになる。
+以下、 1 番目の参考URLからコピペしたもの。これを改造すれば、スクリプト呼び出し時に表示内容を変更できるようになる。
 
 ```powershell
 $ErrorActionPreference = "Stop"
@@ -1121,32 +1156,31 @@ $notifier = [Windows.UI.Notifications.ToastNotificationManager]::CreateToastNoti
 $notifier.Show($toast);
 ```
 
-**参考URL**
-<https://gist.github.com/altrive/72594b8427b2fff16431>
-<https://nyanshiba.hatenablog.com/entry/2018/03/16/014246>
-<https://docs.microsoft.com/ja-jp/windows/apps/desktop/modernize/desktop-to-uwp-enhance>
-<https://www.it-swarm-ja.tech/ja/windows-10/powershellでuwpapi名前空間を使用する/944473153>
-<https://stuncloud.wordpress.com/2020/11/24/powershell-7-1-でwinrtが死んだのでなんとかしていく/>
+**参考URL**：
 
-### PowerShellとアセンブリ
+- <https://gist.github.com/altrive/72594b8427b2fff16431>
+- <https://nyanshiba.hatenablog.com/entry/2018/03/16/014246>
+- <https://docs.microsoft.com/ja-jp/windows/apps/desktop/modernize/desktop-to-uwp-enhance>
+- <https://www.it-swarm-ja.tech/ja/windows-10/powershellでuwpapi名前空間を使用する/944473153>
+- <https://stuncloud.wordpress.com/2020/11/24/powershell-7-1-でwinrtが死んだのでなんとかしていく/>
+
+### PowerShell とアセンブリ
 
 #### アセンブリとは
 
-アセンブリとは、.NETランタイム環境で実行できるプリコンパイル済みコードの塊のこと。
-具体的には.dllファイル、または.exeファイルであり、.NETプログラムは1つ以上のアセンブリで構成される。
+アセンブリとは、 .NET ランタイム環境で実行できるプリコンパイル済みコードの塊のこと。具体的には .dll ファイル、または .exe ファイルであり、 .NET プログラムは1つ以上のアセンブリで構成される。
 
 | アセンブリの種類 | 説明 |
 | --- | --- |
-| プライベートアセンブリ | 1つのアプリケーションのみの唯一のプロパティであるアセンブリ。通常はアプリケーションのルートフォルダーに保存される。 |
-| パブリック/共有アセンブリ | 一度に複数のアプリケーションで使用できるdllのこと。共有アセンブリはGAC（Global Cache Assenbly）に保存される。 |
+| プライベートアセンブリ | 1 つのアプリケーションのみの唯一のプロパティであるアセンブリ。通常はアプリケーションのルートフォルダーに保存される。 |
+| パブリック/共有アセンブリ | 一度に複数のアプリケーションで使用できるdllのこと。共有アセンブリは GAC（Global Cache Assenbly）に保存される。 |
 | サテライトアセンブリ | 画像などの静的オブジェクトやアプリケーションに必要なそのほかの非実行ファイルのみのこと。 |
 
-GACは C:\\Windows\\GAC フォルダに格納されている。
+GACは `C:\\Windows\\GAC` フォルダに格納されている。
 
-#### PowerShellにロードされているアセンブリ
+#### PowerShell にロードされているアセンブリ
 
-PowerShellも .NET Frameworkを利用しているので、あらかじめいくつかのアセンブリをロードしている。
-以下のコマンドでPowerShellにロードされているアセンブリを一覧化できる。
+PowerShell も .NET Framework を利用しているので、あらかじめいくつかのアセンブリをロードしている。以下のコマンドで PowerShell にロードされているアセンブリを一覧化できる。
 
 ```powershell
 [System.AppDomain]::CurrentDomain.GetAssemblies() | % { $_.GetName().Name }
@@ -1154,19 +1188,20 @@ PowerShellも .NET Frameworkを利用しているので、あらかじめいく�
 
 #### アセンブリのロード
 
-PowerShell標準というか、推奨の手法として Add-Type を使う。
+PowerShell 推奨の手法として Add-Type を使う。
 
 ```powershell
 Add-Type -AssemblyName System.Net.Http
 ```
 
-実は参照するだけでもアセンブリをロードすることが可能で、かつWinRT APIのアセンブリは参照記法でしかロードできないっぽい。
+実は参照するだけでもアセンブリをロードすることが可能。しかも、 WinRT API のアセンブリは参照記法でしかロードできないっぽい。
 
 ```powershell
 # [class, namespace, ContentType = WindowsRuntime]
 [Windows.UI.Notifications.ToastNotificationManager, Windows.UI.Notifications, ContentType = WindowsRuntime] > $null
 ```
 
-**参考URL**
-<https://tech.guitarrapc.com/entry/2014/03/17/042253>
-<https://www.vwnet.jp/Windows/PowerShell/CheckAssemblis.htm>
+**参考URL**：
+
+- <https://tech.guitarrapc.com/entry/2014/03/17/042253>
+- <https://www.vwnet.jp/Windows/PowerShell/CheckAssemblis.htm>

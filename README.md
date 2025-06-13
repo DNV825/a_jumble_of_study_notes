@@ -1,10 +1,10 @@
 ---
 layout: home
-title: DNV825 Jekyll Gitbook Theme
+title: DNV825 a jumble of study notes
 permalink: /
 ---
 
-Make Jelly site have a GitBook look!
+雑多な勉強ノートの置き場所。
 
 ## Jekyll の参考資料
 
