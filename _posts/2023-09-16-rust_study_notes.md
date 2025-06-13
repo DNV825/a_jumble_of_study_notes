@@ -1,4 +1,10 @@
-# Rustの学習ノート
+---
+title: Rust study notes
+author: DNV825
+date: 2023-09-16
+category: Jekyll
+layout: post
+---
 
 ## Rust開発環境の構築方法
 
@@ -119,7 +125,7 @@ Rustのプロジェクト（パッケージ）は以下の構成をとる。
 | (5) | 外部クレート | 主に [crates.io](https://crates.io/) で公開されているクレートのこと。 |
 | (6) | stdクレート | Rustの標準ライブラリを提供するクレートのこと。 |
 
-![./img/rust_basic.png](./img/rust_basic.png)
+![../assets/images/rust_basic.png](../assets/images/rust_basic.png)
 
 ### （TODO）dependenciesについて
 
@@ -303,7 +309,7 @@ let スライス名[: &\[型\]] = &mut 配列変数名\[参照範囲\];
 
 スライス自体は下図のように配列のインデックスへのポインタと参照する長さを持つだけで、値を直接持つわけではない。
 
-![./img/slice_and_array_relationship.png](./img/slice_and_array_relationship.png)
+![../assets/images/slice_and_array_relationship.png](../assets/images/slice_and_array_relationship.png)
 
 ある配列の1番目から2番目までの範囲をスライス化する場合、以下のようなコードとなる。
 
@@ -1273,7 +1279,7 @@ fn main() {
 
 冒頭に挙げた画像の通り、Rustのプロジェクト（パッケージ）は以下の構成になっている。この章では外部クレートやモジュールを利用する手順を紹介する。
 
-![./img/rust_basic.png](./img/rust_basic.png)
+![../assets/images/rust_basic.png](../assets/images/rust_basic.png)
 
 #### 外部クレートのインポート
 

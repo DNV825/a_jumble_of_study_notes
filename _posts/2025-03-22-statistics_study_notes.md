@@ -1,5 +1,5 @@
 ---
-title: Statistic study notes
+title: Statistics study notes
 author: DNV825
 date: 2025-03-22
 category: Jekyll

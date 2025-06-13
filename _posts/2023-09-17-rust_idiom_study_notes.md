@@ -1,4 +1,10 @@
-# Rustの学習ノート（イディオム編）
+---
+title: Rust idiom study notes
+author: DNV825
+date: 2023-09-17
+category: Jekyll
+layout: post
+---
 
 ## 型変換
 

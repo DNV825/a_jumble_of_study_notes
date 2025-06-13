@@ -1,4 +1,10 @@
-# 組み込みRustの学習ノート
+---
+title: Embedded Rust study notes
+author: DNV825
+date: 2023-09-18
+category: Jekyll
+layout: post
+---
 
 ## 組み込み機器向けにRustを利用するための情報
 
@@ -6,7 +12,7 @@
 
 Rustの標準ライブラリは以下の3レベル構造で提供されている。
 
-![./img/3level_structure_std_library.png](./img/3level_structure_std_library.png)
+![../assets/images/3level_structure_std_library.png](../assets/images/3level_structure_std_library.png)
 
 `core`クレートと`alloc`クレートは`std`クレートのサブセットである。
 
