@@ -1,5 +1,5 @@
 ---
-title: The rule of mahjong
+title: English study notes
 author: DNV825
 date: 2025-06-14
 category: Jekyll
