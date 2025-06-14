@@ -59,6 +59,9 @@ collections:
   rust:
     output: true
     permalink: /:collection/:path/
+  docker:
+    output: true
+    permalink: /:collection/:path/
   others:
     output: true
     permalink: /:collection/:path/
@@ -68,6 +71,7 @@ ordered_collections:
   - pages
   - powershell
   - rust
+  - docker
   - others
 
 page_width: 800px
