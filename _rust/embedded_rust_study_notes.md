@@ -4,6 +4,7 @@ author: DNV825
 date: 2023-01-28
 category: Jekyll
 layout: post
+order: 3
 ---
 
 ## 組み込み機器向けにRustを利用するための情報
@@ -12,7 +13,7 @@ layout: post
 
 Rustの標準ライブラリは以下の3レベル構造で提供されている。
 
-![../assets/images/3level_structure_std_library.png](../assets/images/3level_structure_std_library.png)
+![../../assets/images/3level_structure_std_library.png](../../assets/images/3level_structure_std_library.png)
 
 `core`クレートと`alloc`クレートは`std`クレートのサブセットである。
 

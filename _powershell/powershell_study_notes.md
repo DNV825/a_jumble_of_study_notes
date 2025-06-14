@@ -4,6 +4,7 @@ author: DNV825
 date: 2021-01-24
 category: Jekyll
 layout: post
+order: 1
 ---
 
 文法やノウハウのメモ。

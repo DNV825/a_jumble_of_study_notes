@@ -55,9 +55,11 @@ collections:
     permalink: /:collection/:path/
   powershell:
     output: true
+    sort_by: order
     permalink: /:collection/:path/
   rust:
     output: true
+    sort_by: order
     permalink: /:collection/:path/
   others:
     output: true

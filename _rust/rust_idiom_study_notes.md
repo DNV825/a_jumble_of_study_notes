@@ -4,6 +4,7 @@ author: DNV825
 date: 2023-08-29
 category: Jekyll
 layout: post
+order: 2
 ---
 
 ## 型変換
