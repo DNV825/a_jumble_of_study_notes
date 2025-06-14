@@ -218,7 +218,7 @@ r音化の表現にはいくつかのパターンがある。1つは/r/で表現
 
 例えば、表2には「ɛ」が登場しないが、英語の発音としては存在しているようだ。
 
-あと、発音記号の入力が大変なので、（[snippet](../../assets/files/code-snippets.txt)を用意してみた。emmet的なものがあるともっと助かるのだけれども。
+あと、発音記号の入力が大変なので、（[snippet](https://dnv825.github.io/a_jumble_of_study_notes/assets/files/code-snippets.txt)を用意してみた。emmet的なものがあるともっと助かるのだけれども。
 
 表2 -- 英語で登場する発音記号一覧
 
@@ -332,7 +332,7 @@ I'm going to sing!
 | [w]  | ^          | ①・⑤（両）唇軟口蓋音 | 有声音        | 口を丸めて「わ」を言ってわずかに口を開く音、「ぅわ」の音 |
 | [j]  | ^          | ④硬口蓋音             | 有声音        | 力強い舌と天井が狭い「やゆよ」 |
 
-[![../../assets/images/consonant_adjustment_position.png](../../assets/images/consonant_adjustment_position.png)](../../assets/images/consonant_adjustment_position.png)
+[![https://dnv825.github.io/a_jumble_of_study_notes/assets/images/consonant_adjustment_position.png](https://dnv825.github.io/a_jumble_of_study_notes/assets/images/consonant_adjustment_position.png)](https://dnv825.github.io/a_jumble_of_study_notes/assets/images/consonant_adjustment_position.png)
 図x -- 子音の調整位置 consonant_adjustment_position
 
 | No  | 名称                     |
@@ -358,7 +358,7 @@ I'm going to sing!
 
 ただ、母音図は教科書によりかなり差があるらしい。[【母音図で図解！】英語の母音の舌の位置一覧](https://lion-eigo.com/pronunciation/tongue-position/) で検証されており、結果を見ると、確かに意外と細かく違っている。
 
-[![../../assets/images/Vowels.png](../../assets/images/Vowels.png)](../../assets/images/Vowels.svg)
+[![https://dnv825.github.io/a_jumble_of_study_notes/assets/images/Vowels.png](https://dnv825.github.io/a_jumble_of_study_notes/assets/images/Vowels.png)](https://dnv825.github.io/a_jumble_of_study_notes/assets/images/Vowels.svg)
 
 記号が2つ並んでいるものは、左が非円唇、右が円唇。非円唇とは唇が丸みを帯びないもの、円唇とは唇が丸みを帯びるもの。
 
@@ -376,7 +376,7 @@ I'm going to sing!
 
 特に「う」は、この図よりも中舌寄りかもしれない。
 
-[![../../assets/images/Japanese_Vowels.png](../../assets/images/Japanese_Vowels.png)](../../assets/images/Japanese_Vowels.svg)
+[![https://dnv825.github.io/a_jumble_of_study_notes/assets/images/Japanese_Vowels.png](https://dnv825.github.io/a_jumble_of_study_notes/assets/images/Japanese_Vowels.png)](https://dnv825.github.io/a_jumble_of_study_notes/assets/images/Japanese_Vowels.svg)
 
 ## 参考資料
 
