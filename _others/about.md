@@ -6,7 +6,9 @@ category: Jekyll
 layout: post
 ---
 
-This is an about page for "others" in the collections.
+## ToDo
+
+- [ ] front matter の date でソートする仕組みになっているが、 \_rust や \_powershell ディレクトリのファイルは、例えば order でソートするようにしたい。
 
 ## 数式が表示されなくなったら
 
