@@ -13,7 +13,7 @@ created: 2023-01-28
 
 Rustの標準ライブラリは以下の3レベル構造で提供されている。
 
-![../../assets/images/3level_structure_std_library.png](../../assets/images/3level_structure_std_library.png)
+![https://dnv825.github.io/a_jumble_of_study_notes/assets/images/3level_structure_std_library.png](https://dnv825.github.io/a_jumble_of_study_notes/assets/images/3level_structure_std_library.png)
 
 `core`クレートと`alloc`クレートは`std`クレートのサブセットである。
 
