@@ -290,7 +290,7 @@ wsluser@pc:~$ sudo systemctl restart docker
 
 ## 利用可能な CUDA のバージョンを把握する
 
-まず、[Your GPU Compute Capability](https://developer.nvidia.com/cuda-gpus) から、自分の使う GPU の Compute Capability を把握する。
+``まず、[Your GPU Compute Capability](https://developer.nvidia.com/cuda-gpus) から、自分の使う GPU の Compute Capability を把握する。``
 
 先ほど実行した `nvidia-smi` コマンドで、GPU が対応する CUDA のバージョンが表示されていた。 Khadas Mind Graphics GForce RTS 4060 Ti 16GB GDDR6 が対応する CUDA は v12.6 らしい。
 
