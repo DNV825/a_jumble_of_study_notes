@@ -53,6 +53,12 @@ collections:
   pages:
     output: true
     permalink: /:collection/:path/
+  powershell:
+    output: true
+    permalink: /:collection/:path/
+  rust:
+    output: true
+    permalink: /:collection/:path/
   others:
     output: true
     permalink: /:collection/:path/
@@ -60,6 +66,8 @@ collections:
 ordered_collections:
   - posts
   - pages
+  - powershell
+  - rust
   - others
 
 page_width: 800px

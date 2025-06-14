@@ -2,7 +2,7 @@
 title: PowerShell study notes
 author: DNV825
 date: 2021-01-24
-categories: Jekyll powershell
+category: Jekyll
 layout: post
 ---
 
