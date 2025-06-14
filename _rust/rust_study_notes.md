@@ -1,10 +1,10 @@
 ---
 title: Rust study notes
 author: DNV825
-date: 2023-01-28
+date: 2023-01-01
 category: Jekyll
 layout: post
-order: 1
+created: 2023-01-28
 ---
 
 ## Rust開発環境の構築方法

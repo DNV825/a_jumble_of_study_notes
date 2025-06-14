@@ -1,10 +1,10 @@
 ---
 title: Embedded Rust study notes
 author: DNV825
-date: 2023-01-28
+date: 2023-01-03
 category: Jekyll
 layout: post
-order: 3
+created: 2023-01-28
 ---
 
 ## 組み込み機器向けにRustを利用するための情報
