@@ -1,7 +1,7 @@
 ---
 title: Rust study notes
 author: DNV825
-date: 2023-09-16
+date: 2023-01-28
 category: Jekyll
 layout: post
 ---

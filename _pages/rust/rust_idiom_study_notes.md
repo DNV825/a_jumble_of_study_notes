@@ -1,7 +1,7 @@
 ---
 title: Rust idiom study notes
 author: DNV825
-date: 2023-09-17
+date: 2023-08-29
 category: Jekyll
 layout: post
 ---

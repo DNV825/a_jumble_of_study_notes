@@ -1,7 +1,7 @@
 ---
 title: PowerShell study notes
 author: DNV825
-date: 2025-04-27
+date: 2021-01-24
 category: Jekyll
 layout: post
 ---
