@@ -28,6 +28,7 @@ JavaScript で tikz を利用可能にするもの。すごい。参考：<https
 <script type="text/tikz">
 \begin{tikzpicture}
 <!-- % から始まるコメントは使えないが HTML コメントは使える。2バイト文字の表示は非対応。 -->
+<!-- % しかし、　Jekyll だとうまく動かないのかもしれない。 -->
 \draw (0,0) circle (1in);
 \end{tikzpicture}
 </script>
@@ -38,11 +39,13 @@ JavaScript で tikz を利用可能にするもの。すごい。参考：<https
 <script type="text/tikz">
 \begin{tikzpicture}
 <!-- % から始まるコメントは使えないが HTML コメントは使える。2バイト文字の表示は非対応。 -->
+<!-- % しかし、　Jekyll だとうまく動かないのかもしれない。 -->
 \draw (0,0) circle (1in);
 \end{tikzpicture}
 </script>
 {% endraw %}
 
+<!-- 
 {% raw %}
 <script type="text/tikz">
 \newcommand{\mycomment}[1]{}
@@ -74,7 +77,7 @@ JavaScript で tikz を利用可能にするもの。すごい。参考：<https
 
 \end{tikzpicture}
 </script>
-{% endraw %}
+{% endraw %} -->
 
 ## 指数と対数
 
