@@ -24,11 +24,12 @@ JavaScript で tikz を利用可能にするもの。すごい。参考：<https
 `<script type="text/tikz"></script>` タグの中に tikz を記述する。`html {cmd=true hide=true}` を指定しても、Markdown Preview Enhanced では実行してくれないようだ。
 
 ```html
+<!-- 通常の TikzJax は \% から始まるコメントが使えない。しかし、　HTML コメントは使える。 -->
+<!-- また、2バイト文字の表示は非対応。テキストは英語を使うこと。 -->
+<!-- ただ、最悪なことに Jekyll を使うと HTML コメントがうまく認識されなくなってしまうようだ…。 -->
 {% raw %}
 <script type="text/tikz">
 \begin{tikzpicture}
-<!-- % から始まるコメントは使えないが HTML コメントは使える。2バイト文字の表示は非対応。 -->
-<!-- % しかし、　Jekyll だとうまく動かないのかもしれない。 -->
 \draw (0,0) circle (1in);
 \end{tikzpicture}
 </script>
@@ -38,46 +39,46 @@ JavaScript で tikz を利用可能にするもの。すごい。参考：<https
 {% raw %}
 <script type="text/tikz">
 \begin{tikzpicture}
-<!-- % から始まるコメントは使えないが HTML コメントは使える。2バイト文字の表示は非対応。 -->
-<!-- % しかし、　Jekyll だとうまく動かないのかもしれない。 -->
+<!-- 通常の TikzJax は \% から始まるコメントが使えない。しかし、　HTML コメントは使える。 -->
+<!-- また、2バイト文字の表示は非対応。テキストは英語を使うこと。 -->
+<!-- ただ、最悪なことに Jekyll を使うと HTML コメントがうまく認識されなくなってしまうようだ…。 -->
 \draw (0,0) circle (1in);
 \end{tikzpicture}
 </script>
 {% endraw %}
 
-<!-- 
-{% raw %}
-<script type="text/tikz">
-\newcommand{\mycomment}[1]{}
-\begin{tikzpicture}[scale=0.1]
+<!-- {% raw %} -->
+<!-- <script type="text/tikz"> -->
+<!-- \newcommand{\mycomment}[1]{} -->
+<!-- \begin{tikzpicture}[scale=0.1] -->
 
 <!-- % 大枠の四角 -->
-\draw (0,0) rectangle (100,100);
+<!-- \draw (0,0) rectangle (100,100); -->
 
 <!-- % 保菌者（0.01%）の領域 -->
-\fill[orange!30] (0,0) rectangle (1,100);
+<!-- \fill[orange!30] (0,0) rectangle (1,100); -->
 
 <!-- % 非保菌者（99.99%）のうち陽性（誤り）の領域 -->
-\fill[blue!20] (1,99) rectangle (100,100);
+<!-- \fill[blue!20] (1,99) rectangle (100,100); -->
 
 <!-- % 縦横のラベル -->
-\draw[<->] (-2,0) -- (-2,99) node[midway,left] {\text{99\%}};
-\draw[<->] (0,-3) -- (1,-3) node[midway,below] {\text{0.01\% (carrier)}};
-\draw[<->] (1,-7) -- (100,-7) node[midway,below] {\text{99.99\% (not carrier)}};
+<!-- \draw[<->] (-2,0) -- (-2,99) node[midway,left] {\text{99\%}}; -->
+<!-- \draw[<->] (0,-3) -- (1,-3) node[midway,below] {\text{0.01\% (carrier)}}; -->
+<!-- \draw[<->] (1,-7) -- (100,-7) node[midway,below] {\text{99.99\% (not carrier)}}; -->
 
 <!-- % 陽性（真）のラベル -->
-\node[left] at (0,50) {\text{Positive(right)}};
+<!-- \node[left] at (0,50) {\text{Positive(right)}}; -->
 
 <!-- % 陽性（誤り）のラベル -->
-\draw[<->] (50,100.5) -- (50,99) node[midway,right] {\text{1\%}};
-\node[above] at (50,100.5) {\text{Positive(fault)}};
+<!-- \draw[<->] (50,100.5) -- (50,99) node[midway,right] {\text{1\%}}; -->
+<!-- \node[above] at (50,100.5) {\text{Positive(fault)}}; -->
 
 <!-- % 式 -->
-\node[right] at (105,85) {\large $P(B|A)=\frac{\text{\colorbox{orange!30}{\strut}}}{\text{\colorbox{orange!30}{\strut}}+\text{\colorbox{blue!20}{\strut}}}$};
+<!-- \node[right] at (105,85) {\large $P(B|A)=\frac{\text{\colorbox{orange!30}{\strut}}}{\text{\colorbox{orange!30}{\strut}}+\text{\colorbox{blue!20}{\strut}}}$}; -->
 
-\end{tikzpicture}
-</script>
-{% endraw %} -->
+<!-- \end{tikzpicture} -->
+<!-- </script> -->
+<!-- {% endraw %} -->
 
 ## 指数と対数
 
