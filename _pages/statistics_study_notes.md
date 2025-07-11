@@ -211,3 +211,18 @@ $$
 \end{tikzpicture}
 </script>
 {% endraw %}
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+      if (window.TikZJax && window.TikZJax.typeset) {
+          TikZJax.typeset();
+      }
+  });
+</script>
+
+<style type="text/css">
+.tikzjax svg {
+    max-width: none !important;
+    box-sizing: content-box !important;
+}
+</style>
