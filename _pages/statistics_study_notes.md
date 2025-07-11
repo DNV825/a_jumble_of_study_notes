@@ -23,12 +23,11 @@ JavaScript で tikz を利用可能にするもの。すごい。参考：<https
 
 `<script type="text/tikz"></script>` タグの中に tikz を記述する。`html {cmd=true hide=true}` を指定しても、Markdown Preview Enhanced では実行してくれないようだ。
 
+通常の TikzJax は % から始まるコメントが使えない。また、2バイト文字の表示は非対応。テキストは英語を使うこと。
+
+Jekyll で TikzJax を利用する場合、以下のように記述すればよい。
+
 ```html
-<!-- 通常の TikzJax は \% から始まるコメントが使えない。しかし、　HTML コメントは使える。 -->
-<!-- また、2バイト文字の表示は非対応。テキストは英語を使うこと。 -->
-<!-- ただ、最悪なことに Jekyll を使うと HTML コメントがうまく認識されなくなってしまうようだ…。 -->
-<!-- そのため、 Jekyll へアップロードする際にはコメントを削除するとよい。 -->
-<!-- もちろん全然良くないんだが、今のところそうしないと画像が生成されないのでしょうがない。何か手があるとよいのだが。 -->
 {% raw %}
 <script type="text/tikz">
 \begin{tikzpicture}
@@ -45,39 +44,6 @@ JavaScript で tikz を利用可能にするもの。すごい。参考：<https
 \end{tikzpicture}
 </script>
 {% endraw %}
-
-<!-- {% raw %} -->
-<!-- <script type="text/tikz"> -->
-<!-- \newcommand{\mycomment}[1]{} -->
-<!-- \begin{tikzpicture}[scale=0.1] -->
-
-<!-- % 大枠の四角 -->
-<!-- \draw (0,0) rectangle (100,100); -->
-
-<!-- % 保菌者（0.01%）の領域 -->
-<!-- \fill[orange!30] (0,0) rectangle (1,100); -->
-
-<!-- % 非保菌者（99.99%）のうち陽性（誤り）の領域 -->
-<!-- \fill[blue!20] (1,99) rectangle (100,100); -->
-
-<!-- % 縦横のラベル -->
-<!-- \draw[<->] (-2,0) -- (-2,99) node[midway,left] {\text{99\%}}; -->
-<!-- \draw[<->] (0,-3) -- (1,-3) node[midway,below] {\text{0.01\% (carrier)}}; -->
-<!-- \draw[<->] (1,-7) -- (100,-7) node[midway,below] {\text{99.99\% (not carrier)}}; -->
-
-<!-- % 陽性（真）のラベル -->
-<!-- \node[left] at (0,50) {\text{Positive(right)}}; -->
-
-<!-- % 陽性（誤り）のラベル -->
-<!-- \draw[<->] (50,100.5) -- (50,99) node[midway,right] {\text{1\%}}; -->
-<!-- \node[above] at (50,100.5) {\text{Positive(fault)}}; -->
-
-<!-- % 式 -->
-<!-- \node[right] at (105,85) {\large $P(B|A)=\frac{\text{\colorbox{orange!30}{\strut}}}{\text{\colorbox{orange!30}{\strut}}+\text{\colorbox{blue!20}{\strut}}}$}; -->
-
-<!-- \end{tikzpicture} -->
-<!-- </script> -->
-<!-- {% endraw %} -->
 
 ## 指数と対数
 
@@ -182,3 +148,66 @@ $$
 ### 最頻値
 
 最も頻繁に出現する値のこと。
+
+## ベイズの定理
+
+<!-- {% raw %}
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.1]
+
+% 大枠の四角
+\draw (0,0) rectangle (160,100);
+
+% 保菌者（0.01%）の領域
+\fill[orange!30] (0,3) rectangle (3,100);
+
+% 陽性（真）のラベル
+\draw[thick] (0,100) -- (-10,100);
+\draw[thick, <->] (-5,4) -- (-5,99)  node [midway, left,  align=center] {$99\%$};
+\draw[thick] (0,3) -- (-10,3);
+\draw[->] (10,50) -- (5,50) node[right] at (10,50) {Positive (true)};
+
+% 非保菌者（99.99%）のうち陽性（誤り）の領域
+\fill[blue!20] (0,100) rectangle (160,97);
+
+% 陽性（誤り）のラベル
+\draw[<->] (10,97) -- (10,100) node[midway,right]{$1\%$};
+\draw[thick, ->] (75,93) -- (75,97) node[below] at (75,92) {Positive (false)};
+
+% 上部のラベル
+\draw[thick, <->] (0,103) -- (3, 103) node[midway, above,align=center] at(0, 105) {P(B) = 0.01\%\\(carrier) };
+\draw[thick, <->] (3,103) -- (160,103) node [midway, above, align=center] {P($\overline{B}$) = 99.99\%\\(not carrier)};
+
+% 数式
+\draw (200,90) -- (180,90) node[left, align=right] {P(A $\vert$ B) =};
+\fill[orange!30] (187,96) rectangle (193,92);
+\fill[orange!30] (180,88) rectangle (186,84);
+\draw (190,86) node {$+$};
+\fill[blue!20] (194,88) rectangle (200,84);
+
+\end{tikzpicture}
+</script>
+{% endraw %} -->
+
+{% raw %}
+<script type="text/tikz">
+\begin{tikzpicture}[scale=0.1]
+\draw (0,0) rectangle (160,100);
+\fill[orange!30] (0,3) rectangle (3,100);
+\draw[thick] (0,100) -- (-10,100);
+\draw[thick, <->] (-5,4) -- (-5,99)  node [midway, left,  align=center] {$99\%$};
+\draw[thick] (0,3) -- (-10,3);
+\draw[->] (10,50) -- (5,50) node[right] at (10,50) {Positive (true)};
+\fill[blue!20] (0,100) rectangle (160,97);
+\draw[<->] (10,97) -- (10,100) node[midway,right]{$1\%$};
+\draw[thick, ->] (75,93) -- (75,97) node[below] at (75,92) {Positive (false)};
+\draw[thick, <->] (0,103) -- (3, 103) node[midway, above,align=center] at(0, 105) {P(B) = 0.01\%\\(carrier) };
+\draw[thick, <->] (3,103) -- (160,103) node [midway, above, align=center] {P($\overline{B}$) = 99.99\%\\(not carrier)};
+\draw (200,90) -- (180,90) node[left, align=right] {P(A $\vert$ B) =};
+\fill[orange!30] (187,96) rectangle (193,92);
+\fill[orange!30] (180,88) rectangle (186,84);
+\draw (190,86) node {$+$};
+\fill[blue!20] (194,88) rectangle (200,84);
+\end{tikzpicture}
+</script>
+{% endraw %}
