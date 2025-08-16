@@ -17,127 +17,254 @@
 	// }
 	"Print current date and time": {
 		"prefix": "ddd",
-		"body": ["$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE($CURRENT_DAY_NAME_SHORT) $CURRENT_HOUR:$CURRENT_MINUTE"],
+		"body": [
+			"$CURRENT_YEAR/$CURRENT_MONTH/$CURRENT_DATE($CURRENT_DAY_NAME_SHORT) $CURRENT_HOUR:$CURRENT_MINUTE"
+		],
 		"description": "yyyy/mm/dd(aaa) hh:MM"
 	},
+	"PlantUML Mindmap **": {
+		"prefix": "'2*",
+		"body": [
+			"** <&nil>"
+		],
+		"description": "**"
+	},
+	"PlantUML Mindmap ***": {
+		"prefix": "'3*",
+		"body": [
+			"*** <&nil>"
+		],
+		"description": "***"
+	},
+	"PlantUML Mindmap ****": {
+		"prefix": "'4*",
+		"body": [
+			"**** <&nil>"
+		],
+		"description": "****"
+	},
+	"PlantUML Mindmap *****": {
+		"prefix": "'5*",
+		"body": [
+			"***** <&nil>"
+		],
+		"description": "*****"
+	},
+	"PlantUML Mindmap ******": {
+		"prefix": "'6*",
+		"body": [
+			"****** <&nil>"
+		],
+		"description": "******"
+	},
+	"PlantUML Mindmap *******": {
+		"prefix": "'7*",
+		"body": [
+			"******* <&nil>"
+		],
+		"description": "*******"
+	},
+	"PlantUML Mindmap ********": {
+		"prefix": "'8*",
+		"body": [
+			"******** <&nil>"
+		],
+		"description": "********"
+	},
+	"PlantUML Mindmap *********": {
+		"prefix": "'9*",
+		"body": [
+			"********* <&nil>"
+		],
+		"description": "*********"
+	},
 	"Phonetic Symbols [ˈ]": {
-		"prefix": "@primary-stress",
-		"body": ["ˈ"],
+		"prefix": "\\primary-stress",
+		"body": [
+			"ˈ"
+		],
 		"description": "primary stress"
 	},
 	"Phonetic Symbols [ˌ]": {
-		"prefix": "@secondary-stress",
-		"body": ["ˌ"],
+		"prefix": "\\secondary-stress",
+		"body": [
+			"ˌ"
+		],
 		"description": "secondary stress"
 	},
 	"Phonetic Symbols [ɪ]": {
-		"prefix": "@small-capital-I",
-		"body": ["ɪ"],
+		"prefix": "\\small-capital-I",
+		"body": [
+			"ɪ"
+		],
 		"description": "small capital I"
 	},
 	"Phonetic Symbols [æ]": {
-		"prefix": "@ash",
-		"body": ["æ"],
+		"prefix": "\\ash",
+		"body": [
+			"æ"
+		],
 		"description": "ash"
 	},
 	"Phonetic Symbols [ɒ]": {
-		"prefix": "@turned-script-a",
-		"body": ["ɒ"],
+		"prefix": "\\turned-script-a",
+		"body": [
+			"ɒ"
+		],
 		"description": "turned script a"
 	},
 	"Phonetic Symbols [ʌ]": {
-		"prefix": "@turned-v",
-		"body": ["ʌ"],
+		"prefix": "\\turned-v",
+		"body": [
+			"ʌ"
+		],
 		"description": "turned v"
 	},
 	"Phonetic Symbols [ə]": {
-		"prefix": "@schwa",
-		"body": ["ə"],
+		"prefix": "\\schwa",
+		"body": [
+			"ə"
+		],
 		"description": "schwa"
 	},
 	"Phonetic Symbols [ɚ]": {
-		"prefix": "@hooked-schwa",
-		"body": ["ɚ"],
+		"prefix": "\\hooked-schwa",
+		"body": [
+			"ɚ"
+		],
 		"description": "hooked schwa"
 	},
 	"Phonetic Symbols [ː]": {
-		"prefix": "@length-mark",
-		"body": ["ː"],
+		"prefix": "\\length-mark",
+		"body": [
+			"ː"
+		],
 		"description": "length mark"
 	},
 	"Phonetic Symbols [ɑ]": {
-		"prefix": "@script-a",
-		"body": ["ɑ"],
+		"prefix": "\\script-a",
+		"body": [
+			"ɑ"
+		],
 		"description": "script a"
 	},
 	"Phonetic Symbols [ɔ]": {
-		"prefix": "@open-o",
-		"body": ["ɔ"],
+		"prefix": "\\open-o",
+		"body": [
+			"ɔ"
+		],
 		"description": "open o"
 	},
+	"Phonetic Symbols [ɛ]": {
+		"prefix": "\\epsilon",
+		"body": [
+			"ɛ"
+		],
+		"description": "epsilon"
+	},
 	"Phonetic Symbols [ɝ]": {
-		"prefix": "@right-hook-reversed-epsilon",
-		"body": ["ɝ"],
+		"prefix": "\\right-hook-reversed-epsilon",
+		"body": [
+			"ɝ"
+		],
 		"description": "right hook reversed epsilon"
 	},
 	"Phonetic Symbols [ʊ]": {
-		"prefix": "@upsilon",
-		"body": ["ʊ"],
+		"prefix": "\\upsilon",
+		"body": [
+			"ʊ"
+		],
 		"description": "upsilon"
 	},
 	"Phonetic Symbols [t̬]": {
-		"prefix": "@t-with-subscript-wedge",
-		"body": ["t̬"],
+		"prefix": "\\t-with-subscript-wedge",
+		"body": [
+			"t̬"
+		],
 		"description": "t with subscript wedge"
 	},
 	"Phonetic Symbols [d]": {
-		"prefix": "@d-with-subscript-wedge",
-		"body": ["d̬"],
+		"prefix": "\\d-with-subscript-wedge",
+		"body": [
+			"d̬"
+		],
 		"description": "d with subscript wedge"
 	},
 	"Phonetic Symbols [θ]": {
-		"prefix": "@theta",
-		"body": ["θ"],
+		"prefix": "\\theta",
+		"body": [
+			"θ"
+		],
 		"description": "theta"
 	},
 	"Phonetic Symbols [ð]": {
-		"prefix": "@eth",
-		"body": ["ð"],
+		"prefix": "\\eth",
+		"body": [
+			"ð"
+		],
 		"description": "eth"
 	},
 	"Phonetic Symbols [ʃ]": {
-		"prefix": "@esh",
-		"body": ["ʃ"],
+		"prefix": "\\esh",
+		"body": [
+			"ʃ"
+		],
 		"description": "esh"
 	},
 	"Phonetic Symbols [ʒ]": {
-		"prefix": "@ezh",
-		"body": ["ʒ"],
+		"prefix": "\\ezh",
+		"body": [
+			"ʒ"
+		],
 		"description": "ezh"
 	},
 	"Phonetic Symbols [ʧ]": {
-		"prefix": "@t-esh-ligature",
-		"body": ["ʧ"],
+		"prefix": "\\t-esh-ligature",
+		"body": [
+			"ʧ"
+		],
 		"description": "t-esh ligature"
 	},
 	"Phonetic Symbols [ʤ]": {
-		"prefix": "@d-ezh-ligature",
-		"body": ["ʤ"],
+		"prefix": "\\d-ezh-ligature",
+		"body": [
+			"ʤ"
+		],
 		"description": "d-ezh ligature"
 	},
 	"Phonetic Symbols [ŋ]": {
-		"prefix": "@eng",
-		"body": ["ŋ"],
+		"prefix": "\\eng",
+		"body": [
+			"ŋ"
+		],
 		"description": "eng"
 	},
 	"Phonetic Symbols [ɭ]": {
-		"prefix": "@right-tail-l",
-		"body": ["ɭ"],
+		"prefix": "\\right-tail-l",
+		"body": [
+			"ɭ"
+		],
 		"description": "right tail l"
 	},
 	"Phonetic Symbols [ç]": {
-		"prefix": "@c-cedilla",
-		"body": ["ç"],
+		"prefix": "\\c-cedilla",
+		"body": [
+			"ç"
+		],
 		"description": "c-cedilla"
+	},
+	"oe ligature": {
+		"prefix": "\\oe",
+		"body": [
+			"œ"
+		],
+		"description": "œ (Latin small ligature)"
+	},
+	"OE ligature": {
+		"prefix": "\\OE",
+		"body": [
+			"Œ"
+		],
+		"description": "Œ (Latin capital ligature)"
 	}
 }
