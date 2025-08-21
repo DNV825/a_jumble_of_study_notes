@@ -26,17 +26,17 @@ layout: post
 
 ## アルファべ（Alphabet）
 
-H h はアルファべとしては発音するが、単語の中に置かれた際には発音しない。じゃあ消えろよ。なんだそれ。
+H h はアルファべとしては発音するが、単語の中に置かれた際には発音しない。また、フランス語では Y y は母音。
 
 | 母音字 | 子音字 | 子音字 | 子音字 | 子音字 | 子音字 | 子音字 |
 | --- | --- | --- | --- | --- | --- | --- |
-| A a [a] | &nbsp; | B b [be] | C c [se] | D d [de] | &nbsp; | &nbsp; |
-| E e [ə] | &nbsp; | F f [ɛf] | G g [ʒe] | &nbsp; | &nbsp; | &nbsp; |
+| **A a** [a] | &nbsp; | B b [be] | C c [se] | D d [de] | &nbsp; | &nbsp; |
+| **E e** [ə] | &nbsp; | F f [ɛf] | G g [ʒe] | &nbsp; | &nbsp; | &nbsp; |
 | &nbsp;  | H h [aʃ] | &nbsp; | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
-| I i [i] | &nbsp; | J j [ʒi] | K k [ka] | L l [ɛl] | M m [ɛm] | N n [ɛn] |
-| O o [o] | &nbsp; | P p [pe] | Q q [ky] | R r [ɛr] | S s [ɛs] | T t [te] |
-| U u [y] | &nbsp; | V v [ve] | W w [dubləve] | X x [iks] | &nbsp; | &nbsp; |
-| Y y [igrɛk] | &nbsp; | Z z [zɛd] | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
+| **I i** [i] | &nbsp; | J j [ʒi] | K k [ka] | L l [ɛl] | M m [ɛm] | N n [ɛn] |
+| **O o** [o] | &nbsp; | P p [pe] | Q q [ky] | R r [ɛr] | S s [ɛs] | T t [te] |
+| **U u** [y] | &nbsp; | V v [ve] | W w [dubləve] | X x [iks] | &nbsp; | &nbsp; |
+| **Y y** [igrɛk] | &nbsp; | Z z [zɛd] | &nbsp; | &nbsp; | &nbsp; | &nbsp; |
 
 ### つづり字記号について
 
