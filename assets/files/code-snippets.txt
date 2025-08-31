@@ -22,62 +22,6 @@
 		],
 		"description": "yyyy/mm/dd(aaa) hh:MM"
 	},
-	"PlantUML Mindmap **": {
-		"prefix": "'2*",
-		"body": [
-			"** <&nil>"
-		],
-		"description": "**"
-	},
-	"PlantUML Mindmap ***": {
-		"prefix": "'3*",
-		"body": [
-			"*** <&nil>"
-		],
-		"description": "***"
-	},
-	"PlantUML Mindmap ****": {
-		"prefix": "'4*",
-		"body": [
-			"**** <&nil>"
-		],
-		"description": "****"
-	},
-	"PlantUML Mindmap *****": {
-		"prefix": "'5*",
-		"body": [
-			"***** <&nil>"
-		],
-		"description": "*****"
-	},
-	"PlantUML Mindmap ******": {
-		"prefix": "'6*",
-		"body": [
-			"****** <&nil>"
-		],
-		"description": "******"
-	},
-	"PlantUML Mindmap *******": {
-		"prefix": "'7*",
-		"body": [
-			"******* <&nil>"
-		],
-		"description": "*******"
-	},
-	"PlantUML Mindmap ********": {
-		"prefix": "'8*",
-		"body": [
-			"******** <&nil>"
-		],
-		"description": "********"
-	},
-	"PlantUML Mindmap *********": {
-		"prefix": "'9*",
-		"body": [
-			"********* <&nil>"
-		],
-		"description": "*********"
-	},
 	"Phonetic Symbols [ˈ]": {
 		"prefix": "\\primary-stress",
 		"body": [
@@ -253,6 +197,48 @@
 		],
 		"description": "c-cedilla"
 	},
+	"Phonetic Symbols [ɥ]": {
+		"prefix": "\\turned-h",
+		"body": [
+			"Œ"
+		],
+		"description": "turned h"
+	},
+	"Phonetic Symbols [œ̃]": {
+		"prefix": "\\oe-legature tilde",
+		"body": [
+			"œ̃"
+		],
+		"description": "oe-legature tilde"
+	},
+	"Phonetic Symbols[ɑ̃]": {
+		"prefix": "\\script-a-tilde",
+		"body": [
+			"ɑ̃"
+		],
+		"description": "script a tilde"
+	},
+	"Phonetic Symbols[ɔ̃]": {
+		"prefix": "\\open-o-tilde",
+		"body": [
+			"ɔ̃"
+		],
+		"description": "open o tilde"
+	},
+	"Phonetic Symbols[ɛ̃]": {
+		"prefix": "\\epsilon-tilde",
+		"body": [
+			"ɛ̃"
+		],
+		"description": "epsilon tilde"
+	},
+	"Phonetic Symbols[ɲ]": {
+		"prefix": "\\n-with-left-hook",
+		"body": [
+			"ɲ"
+		],
+		"description": "n with left hook"
+	},
 	"oe ligature": {
 		"prefix": "\\oe",
 		"body": [
@@ -266,5 +252,5 @@
 			"Œ"
 		],
 		"description": "Œ (Latin capital ligature)"
-	}
+	},
 }
