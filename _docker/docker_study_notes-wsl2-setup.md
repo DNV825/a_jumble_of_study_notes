@@ -357,8 +357,7 @@ nVIDIA が CUDA 環境を整備した Docker イメージを提供している�
 いきなり Docker で Ollama と Open WebUI を動かせるらしいので試してみる。
 
 ```shell
-wsluser@pc:~$ sudo docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ol
-lama
+wsluser@pc:~$ sudo docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama
 Unable to find image 'ollama/ollama:latest' locally
 latest: Pulling from ollama/ollama
 6414378b6477: Pull complete
@@ -579,10 +578,40 @@ wsluser@pc:~$ getent group docker
 docker:x:989:wsluser
 ```
 
-## docker コンテナの ollama をアップデートする
+## docker コンテナの Ollama をアップデートする
 
-以下のように docker コンテナをインタラクティブかつターミナルありで動かし、 ollama 公式ドキュメントに従って ollama を再インストールするスクリプトを実行すればよい。
-ちなみに -i: interactive, -t: terminal という意味である。
+docker コンテナを再構築する必要がある。ちなみに、 -i: interactive, -t: tty, -d: detach, -v: volume という意味である。
+
+```shell
+# ollama コンテナを停止する。
+wsluser@pc:~$ docker stop ollama
+ollama
+
+# ollama コンテナを削除する（データは残る。）
+wsluser@pc:~$ docker rm ollama
+ollama
+
+# ollama コンテナを再取得してデタッチ実行する。
+wsluser@pc:~$ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama:latest
+a8e397bfbdc497953ba8322321990fbe417264f2037a0918596751075bcb30a5
+
+# バージョンがそろった。
+wsluser@pc:~$ docker exec -it --user root ollama bash
+root@a8e397bfbdc4:/# ollama --version
+ollama version is 0.12.6
+
+root@a8e397bfbdc4:/# ollama list
+NAME                                                    ID              SIZE      MODIFIED
+huihui_ai/gpt-oss-abliterated:20b-v2-q4_K_M             35c222309bbd    15 GB     2 hours ago
+huihui_ai/deepseek-r1-abliterated:14b                   6b2209ffd758    9.0 GB    8 months ago
+deepseek-r1:14b                                         ea35dfe18182    9.0 GB    8 months ago
+hf.co/Orenguteng/Llama-3-8B-Lexi-Uncensored-GGUF:F16    fd9d793ede83    16 GB     9 months ago
+jean-luc/tiger-gemma-9b-v3:fp16                         eeb453a4d354    18 GB     9 months ago
+```
+
+### 通常インストールした Ollama をアップデートする
+
+以下のように docker コンテナをインタラクティブかつターミナルありで動かし、 ollama 公式ドキュメントに従って ollama を再インストールするスクリプトを実行すればよい。なお、以下の実行例は docker 上で実行したものなので、最終的にはサーバー側とクライアント側のバージョンに差が出てしまっている。失敗例なので、 docker 上で実行しないように。
 
 ```shell
 wsluser@pc:~$ docker start ollama
@@ -623,12 +652,280 @@ Reading state information... Done
 E: Unable to locate package curl
 ```
 
+Ollama のバージョンは `--version` オプションで確認できる。
+
+```shell
+wsluser@pc:~$ docker exec -it --user root ollama bash
+root@44010c2504fc:/# ollama --version
+ollama version is 0.5.6-0-g2539f2d-dirty
+Warning: client version is 0.12.6
+root@44010c2504fc:/# exit
+exit
+```
+
+この状態、 Ollama のクライアントバージョンだけが上がっており、サーバーのバージョンは古いまま。
+
+## docker コンテナの Open WebUI をアップデートする
+
+```shell
+# 現在のコンテナを停止。
+wsluser@pc:~$ docker stop open-webui
+open-webui
+
+# 現在のコンテナを削除。
+wsluser@pc:~$ docker rm -f open-webui
+open-webui
+
+# 最新の docker イメージをプル。
+wsluser@pc:~$ docker pull ghcr.io/open-webui/open-webui:main
+main: Pulling from open-webui/open-webui
+5c32499ab806: Pull complete
+923f706c7da6: Pull complete
+3305e2b7fc7c: Pull complete
+13973b95de7b: Pull complete
+b124c04c3dda: Pull complete
+4f4fb700ef54: Pull complete
+93f7d71a43ad: Pull complete
+77127ed2bb0c: Pull complete
+5cc688decb4c: Pull complete
+11ba7592cf55: Pull complete
+94bdc704e2ab: Pull complete
+3105e7a030e6: Pull complete
+71e9b7206fa8: Pull complete
+4b74cd7f42f2: Pull complete
+c41c20ad99da: Pull complete
+Digest: sha256:d6ab9bce3030f5b58e59144a7db9fe3012b39c94d27bc2979e98e6d6dc2161da
+Status: Downloaded newer image for ghcr.io/open-webui/open-webui:main
+ghcr.io/open-webui/open-webui:main
+
+# docker イメージを実行する。
+wsluser@pc:~$ docker run -p 3000:8080 --env WEBUI_AUTH=False --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
+Loading WEBUI_SECRET_KEY from file, not provided as an environment variable.
+Generating WEBUI_SECRET_KEY
+Loading WEBUI_SECRET_KEY from .webui_secret_key
+INFO  [alembic.runtime.migration] Context impl SQLiteImpl.
+INFO  [alembic.runtime.migration] Will assume non-transactional DDL.
+INFO  [alembic.runtime.migration] Running upgrade 3781e22d8b01 -> 9f0c9cd09105, Add note table
+INFO  [alembic.runtime.migration] Running upgrade 9f0c9cd09105 -> d31026856c01, Update folder table data
+INFO  [alembic.runtime.migration] Running upgrade d31026856c01 -> 018012973d35, Add indexes
+INFO  [alembic.runtime.migration] Running upgrade 018012973d35 -> 3af16a1c9fb6, update user table
+INFO  [alembic.runtime.migration] Running upgrade 3af16a1c9fb6 -> 38d63c18f30f, Add oauth_session table
+INFO  [alembic.runtime.migration] Running upgrade 38d63c18f30f -> a5c220713937, Add reply_to_id column to message
+INFO  [open_webui.env] 'ENABLE_SIGNUP' loaded from the latest database entry
+INFO  [open_webui.env] 'DEFAULT_LOCALE' loaded from the latest database entry
+INFO  [open_webui.env] 'DEFAULT_PROMPT_SUGGESTIONS' loaded from the latest database entry
+WARNI [open_webui.env]
+
+WARNING: CORS_ALLOW_ORIGIN IS SET TO '*' - NOT RECOMMENDED FOR PRODUCTION DEPLOYMENTS.
+
+INFO  [open_webui.env] VECTOR_DB: chroma
+INFO  [open_webui.env] Embedding model set: sentence-transformers/all-MiniLM-L6-v2
+WARNI [langchain_community.utils.user_agent] USER_AGENT environment variable not set, consider setting it to identify your requests.
+
+ ██████╗ ██████╗ ███████╗███╗   ██╗    ██╗    ██╗███████╗██████╗ ██╗   ██╗██╗
+██╔═══██╗██╔══██╗██╔════╝████╗  ██║    ██║    ██║██╔════╝██╔══██╗██║   ██║██║
+██║   ██║██████╔╝█████╗  ██╔██╗ ██║    ██║ █╗ ██║█████╗  ██████╔╝██║   ██║██║
+██║   ██║██╔═══╝ ██╔══╝  ██║╚██╗██║    ██║███╗██║██╔══╝  ██╔══██╗██║   ██║██║
+╚██████╔╝██║     ███████╗██║ ╚████║    ╚███╔███╔╝███████╗██████╔╝╚██████╔╝██║
+ ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═══╝     ╚══╝╚══╝ ╚══════╝╚═════╝  ╚═════╝ ╚═╝
+
+
+v0.6.34 - building the best AI user interface.
+
+https://github.com/open-webui/open-webui
+
+Fetching 30 files: 100%|██████████| 30/30 [00:00<00:00, 297468.37it/s]
+INFO:     Started server process [1]
+INFO:     Waiting for application startup.
+2025-10-24 11:28:56.333 | INFO     | open_webui.utils.logger:start_logger:162 - GLOBAL_LOG_LEVEL: INFO
+2025-10-24 11:28:56.333 | INFO     | open_webui.main:lifespan:561 - Installing external dependencies of functions and tools...
+2025-10-24 11:28:56.341 | INFO     | open_webui.utils.plugin:install_frontmatter_requirements:283 - No requirements found in frontmatter.
+
+# Ctrl+C を押下。
+^C
+
+wsluser@pc:~$ docker stop open-webui
+open-webui
+
+wsluser@pc:~$ docker start open-webui
+open-webui
+```
+
+## Ollama のモデルを削除する
+
+docker の中に入って削除する。
+
+```shell
+wsluser@pc:~$ docker exec -it --user root ollama bash
+
+root@44010c2504fc:/# ollama list
+NAME                                                    ID              SIZE      MODIFIED
+huihui_ai/gpt-oss-abliterated:20b                       81c701845c49    13 GB     2 hours ago
+huihui_ai/deepseek-r1-abliterated:14b                   6b2209ffd758    9.0 GB    8 months ago
+deepseek-r1:14b                                         ea35dfe18182    9.0 GB    8 months ago
+hf.co/Orenguteng/Llama-3-8B-Lexi-Uncensored-GGUF:F16    fd9d793ede83    16 GB     9 months ago
+jean-luc/tiger-gemma-9b-v3:fp16                         eeb453a4d354    18 GB     9 months ago
+
+root@44010c2504fc:/# ollama rm huihui_ai/gpt-oss-abliterated:20b
+Warning: unable to stop model 'huihui_ai/gpt-oss-abliterated:20b'
+deleted 'huihui_ai/gpt-oss-abliterated:20b'
+
+root@44010c2504fc:/# ollama list
+NAME                                                    ID              SIZE      MODIFIED
+huihui_ai/deepseek-r1-abliterated:14b                   6b2209ffd758    9.0 GB    8 months ago
+deepseek-r1:14b                                         ea35dfe18182    9.0 GB    8 months ago
+hf.co/Orenguteng/Llama-3-8B-Lexi-Uncensored-GGUF:F16    fd9d793ede83    16 GB     9 months ago
+jean-luc/tiger-gemma-9b-v3:fp16                         eeb453a4d354    18 GB     9 months ago
+
+root@44010c2504fc:/# exit
+exit
+```
+
+## エラー対応
+
+### `500: template: :3: function "currentDate" not defined`
+
+gpt-oss とその改造版で発生を確認した。
+
+```shell
+root@44010c2504fc:/# ollama run huihui_ai/gpt-oss-abliterated:20b-v2-q4_K_M
+Error: template: :3: function "currentDate" not defined
+```
+
+- <https://ollama.com/library/gpt-oss>
+- <https://huggingface.co/huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated>
+- <https://huggingface.co/huihui-ai/Huihui-gpt-oss-20b-BF16-abliterated-v2>
+
+どうやらテンプレートファイルの `currentDate` というマクロが機能しなかったことが原因らしい（ Ollama が提供しているはずの API が動かなかったそうだ。）
+
+> <https://ollama.com/huihui_ai/gpt-oss-abliterated:20b-v2-q4_K_M/blobs/51468a0fd901#:~:text=,language%20model%20trained%20by%20OpenAI>
+>
+> ```text
+> <|start|>system<|message|>You are ChatGPT, a large language model trained by OpenAI.
+> Knowledge cutoff: 2024-06
+> Current date: {{ currentDate }}
+> {{- if and .IsThinkSet .Think (ne .ThinkLevel "") }}
+> ```
+
+Ollama v0.11.2 で解決済みらしいので、バージョンを上げればよい。しかし、 docker 上の Ollama のバージョンを上げるには通常のバージョンアップ方法ではなく、 docker コンテナの再ダウンロードが必要なので要注意。
+
+### Ollama でモデルのダウンロードが終わらない
+
+何度もダウンロードをやり直してしまうことがある。原因は謎。
+
+ダウンロード途中のファイルは `-partial` という名前になり、ダウンロードに失敗した断片ファイルは `-partial-n` という名前になるっぽいので、ダウンロード途中のファイル名から `-partial` を削除し、残りの `-partial-n` のファイルたちはファイル削除して再度ダウンロードすると、ダウンロードに成功する可能性がある。
+
+```shell
+wsluser@pc:~$ docker exec -it --user root ollama bash
+
+root@44010c2504fc:/# ollama pull huihui_ai/gpt-oss-abliterated:20b-v2-q4_K_M
+pulling manifest
+pulling ba378c67d733:  97% ▕████████████████████████████████████████████████  ▏  15 GB/ 15 GB  1.2 MB/s   5m43s
+^C
+
+# ~/.ollama/models/blobs/ を見る。
+root@44010c2504fc:/# ls ~/.ollama/models/blobs/sha256-
+sha256-15f56c9d303aa516488cde7730723817f7c6553a4b3983a527a6ba86d7c6df0d
+sha256-1c130376047ee3a780a3a39eef057a096c9af4bacaaa43d831656cab59aa65cc
+sha256-2490e7468436707d5156d7959cf3c6341cc46ee323084cfa3fcf30fe76e397dc
+sha256-282241528150437678e0c62aaebf03d84527f1ab9763b4f8df58d6b2f4b3345e
+sha256-369ca498f347f710d068cbb38bf0b8692dd3fa30f30ca2ff755e211c94768150
+sha256-38b5e20078675a1e3040eced1859e432b423ec732c42f5dab03b0a8ae7ba1bdd
+sha256-3c24b0c80794f0eb6e0de0033f8e3203075db1c4640e837e097712a4b88d393b
+sha256-62fbfd9ed093d6e5ac83190c86eec5369317919f4b149598d2dbb38900e9faef
+sha256-6e4c38e1172f42fdbff13edf9a7a017679fb82b0fde415a3e8b3c31c6ed4a4e4
+sha256-6e9f90f02bb3b39b59e81916e8cfce9deb45aeaeb9a54a5be4414486b907dc1e
+sha256-b78301c0df4d16b2d9ad21cc9448817c816e2efe94fc2ed072cb85b0928e4030
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-0
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-1
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-10
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-11
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-12
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-13
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-14
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-15
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-2
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-3
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-4
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-5
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-6
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-7
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-8
+sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial-9
+sha256-bcffed2643f6a41a924a7b2b6f9ca84032ae19284747fff688f8873883eaebb5
+sha256-cfce48ca57f022cd3676c0623dbc0feb387a043d403ed32b216d3fabd9e5c5ca
+sha256-eef4a93c7addcb9b7d2119faa60a38125905cd149def1467ac7168159f74e57b
+sha256-f4d24e9138dd4603380add165d2b0d970bef471fac194b436ebd50e6147c6588
+
+# -partial-0 から -partial-n と名前が付いたファイルはダウンロードに失敗したファイルなので消す。
+root@44010c2504fc:/# rm ~/.ollama/models/blobs/sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558
+801564-partial-*
+
+# *-partial と名前が付いたファイルがサイズの大きいファイル。このファイルは名前から -partial を消す。
+root@44010c2504fc:/# mv ~/.ollama/models/blobs/sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564-partial ~/.ollama//models/blobs/sha256-ba378c67d733876c123f6cdde7655ea8074c87f619e0fd546841cb4558801564
+
+# 再度プルするとダウンロードに成功する（ことがある。）
+root@44010c2504fc:/# ollama pull huihui_ai/gpt-oss-abliterated:20b-v2-q4_K_M
+pulling manifest
+pulling ba378c67d733: 100% ▕██████████████████████████████████████████████████▏  15 GB
+pulling 51468a0fd901: 100% ▕██████████████████████████████████████████████████▏ 7.4 KB
+pulling f60356777647: 100% ▕██████████████████████████████████████████████████▏  11 KB
+pulling d8ba2f9a17b3: 100% ▕██████████████████████████████████████████████████▏   18 B
+pulling f0413f74bed0: 100% ▕██████████████████████████████████████████████████▏  492 B
+verifying sha256 digest
+writing manifest
+success
+```
+
+### docker コンテナの Ollama のサーバー（デーモン）バージョンが上がらない
+
+docker コンテナ上の Ollama を `curl -fsSL https://ollama.com/install.sh | sh` でバージョンアップすると、サーバーとクライアントのバージョンに差分が出てしまう。差分が出ている場合には以下のように Warning が表示される。
+
+```shell
+wsluser@pc:~$ docker exec -it --user root ollama bash
+root@44010c2504fc:/# ollama --version
+ollama version is 0.5.6-0-g2539f2d-dirty
+Warning: client version is 0.12.6
+```
+
+docker コンテナ上の Ollama をバージョンアップする場合、 Ollama の docker コンテナを再構築しなければならない。
+
+```shell
+# ollama コンテナを停止する。
+wsluser@pc:~$ docker stop ollama
+ollama
+
+# ollama コンテナを削除する（データは残る。）
+wsluser@pc:~$ docker rm ollama
+ollama
+
+# ollama コンテナを再取得してデタッチ実行する。
+wsluser@pc:~$ docker run -d --gpus=all -v ollama:/root/.ollama -p 11434:11434 --name ollama ollama/ollama:latest
+a8e397bfbdc497953ba8322321990fbe417264f2037a0918596751075bcb30a5
+
+# バージョンがそろった。
+wsluser@pc:~$ docker exec -it --user root ollama bash
+root@a8e397bfbdc4:/# ollama --version
+ollama version is 0.12.6
+
+root@a8e397bfbdc4:/# ollama list
+NAME                                                    ID              SIZE      MODIFIED
+huihui_ai/gpt-oss-abliterated:20b-v2-q4_K_M             35c222309bbd    15 GB     2 hours ago
+huihui_ai/deepseek-r1-abliterated:14b                   6b2209ffd758    9.0 GB    8 months ago
+deepseek-r1:14b                                         ea35dfe18182    9.0 GB    8 months ago
+hf.co/Orenguteng/Llama-3-8B-Lexi-Uncensored-GGUF:F16    fd9d793ede83    16 GB     9 months ago
+jean-luc/tiger-gemma-9b-v3:fp16                         eeb453a4d354    18 GB     9 months ago
+```
+
 ## 参考資料
 
 ### 公式資料
 
-- ollama 公式サイト：<https://ollama.com/>
-- ollama 公式ドキュメント：<https://github.com/ollama/ollama/blob/main/docs/linux.md>
+- ollama 公式サイト: <https://ollama.com/>
+- ollama 公式ドキュメント: <https://github.com/ollama/ollama/blob/main/docs/linux.md>
+- Open WebUI 公式サイト: <https://docs.openwebui.com/>
+- Open WebUI 公式アップデート手順: <https://docs.openwebui.com/getting-started/updating/>
 
 ### ありがたき先人たちの教え
 
@@ -647,6 +944,7 @@ E: Unable to locate package curl
 - @kazokmr, Docker を使っている時に調べたことまとめ, Qiita, 2021-06-05, <https://qiita.com/kazokmr/items/1ffc77d01a67aff90c75>
 - @kosuke_aizawa (宏亮 相澤), No.6 新卒未経験エンジニアがDockerを使ってチョメチョメしてみた〜チュートリアル編〜, Qiita, 2017-10-28, <https://qiita.com/kosuke_aizawa/items/4abab88caaae119545cf>
 - Mikael Svenson, How to Run Uncensored DeepSeek R1 on Your Local Machine, Apidog, 2025-02-15, <https://apidog.com/blog/deepseek-r1-abliterated/>
+- tunamayo, ollamaモデルの削除・探し方・追加, note, 2025/07/27, <https://note.com/tororo000/n/n766dd35dd3df>
 
 ## より高度な話
 
