@@ -100,7 +100,9 @@ EGX-TBT-A500 のデバイスドライバである `NVIDIA RTS A500 Embedded GPU`
 
 ## Docker をインストールする
 
-Docker Engine というもののみをインストールする。Docker Desktop という GUI アプリもあるそうだが、こちらは有料になったりすることがあるらしい。
+Docker Engine というもののみをインストールする。Docker Desktop という GUI アプリもあるそうだが、こちらは有料になったりすることがあるらしい。公式ドキュメントは以下のアドレスにて公開されている。
+
+- <https://docs.docker.com/engine/install/ubuntu/>
 
 以下のスクリプトを実行すればインストールすることができるのだが、これは本番環境への使用は推奨されていないそうだ。
 
@@ -922,8 +924,9 @@ jean-luc/tiger-gemma-9b-v3:fp16                         eeb453a4d354    18 GB   
 
 ### 公式資料
 
-- ollama 公式サイト: <https://ollama.com/>
-- ollama 公式ドキュメント: <https://github.com/ollama/ollama/blob/main/docs/linux.md>
+- Docker Engine 公式ドキュメント: <https://docs.docker.com/engine/>
+- Ollama 公式サイト: <https://ollama.com/>
+- Ollama 公式ドキュメント: <https://github.com/ollama/ollama/blob/main/docs/linux.md>
 - Open WebUI 公式サイト: <https://docs.openwebui.com/>
 - Open WebUI 公式アップデート手順: <https://docs.openwebui.com/getting-started/updating/>
 
