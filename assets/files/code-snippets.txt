@@ -200,12 +200,12 @@
 	"Phonetic Symbols [ɥ]": {
 		"prefix": "\\turned-h",
 		"body": [
-			"Œ"
+			"ɥ"
 		],
 		"description": "turned h"
 	},
 	"Phonetic Symbols [œ̃]": {
-		"prefix": "\\oe-legature tilde",
+		"prefix": "\\oe-legature-tilde",
 		"body": [
 			"œ̃"
 		],
