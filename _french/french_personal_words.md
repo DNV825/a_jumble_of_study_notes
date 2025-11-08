@@ -54,7 +54,7 @@ on が nous の代わりをする場合、属詞（※1）や過去分詞の性�
 `()` は母音または無音の h の前の形。
 
 <table>
-  <tr><th rowspan="2">所有者</th><th colspan="3">所有されるもの（名詞）
+  <tr><th rowspan="2">所有者</th><th colspan="3">所有されるもの（名詞）</th></tr>
   <tr><th>男性単数</th><th>女性単数</th><th>複数</th></tr>
   <tr><td>私の</td><td style="text-align: center;">mon</td><td style="text-align: center;">ma (mon)</td><td style="text-align: center;">mes</td></tr>
   <tr><td>君の</td><td style="text-align: center;">ton</td><td style="text-align: center;">ta (ton)</td><td style="text-align: center;">tes</td></tr>
