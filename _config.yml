@@ -78,7 +78,7 @@ ordered_collections:
   - french
   - others
 
-page_width: 800px
+page_width: 1200px
 
 destination:      ./_site
 incremental:      false
