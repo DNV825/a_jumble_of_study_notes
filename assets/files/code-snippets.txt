@@ -239,6 +239,13 @@
 		],
 		"description": "n with left hook"
 	},
+	"Phonetic Symbols[ø]": {
+		"prefix": "\\slashed-o",
+		"body": [
+			"ø"
+		],
+		"description": "slashed o"
+	},
 	"oe ligature": {
 		"prefix": "\\oe",
 		"body": [
