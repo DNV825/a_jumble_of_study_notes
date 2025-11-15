@@ -95,6 +95,34 @@ $$
 \end{align*}
 $$
 
+#### 対数法則の証明
+
+<style>
+mjx-container[display="true"] {
+    justify-content: flex-start !important;
+    text-align: left !important;
+}
+</style>
+
+$(1) \log_a{M} + \log_a{N} = \log_a{MN}$
+: $$
+\begin{align*}
+& \log_a{M} = x, \space \log_a{N} = y \space \text{と置くと、対数の定義より} \\
+& a^x = M, a^y = N \\
+& \text{よって、指数法則により} \\
+& a^{x+y} = MN \\
+& \text{となる。これは対数の定義より} \\
+& \log_a{MN} = x + y \\
+& \text{であることを表す。}
+\end{align*}
+$$
+
+$(1) \log_a{M} + \log_a{N} = \log_a{MN}$
+: $\log_a{M} = x, \space \log_a{N} = y \quad \text{と置くと、対数の定義より}$
+$a^x = M, a^y = N \quad \text{よって、指数法則により}$
+$a^{x+y} = MN \quad \text{となる。これは対数の定義より}$
+$\log_a{MN} = x + y \quad \text{であることを表す。}$
+
 ## 計算方法
 
 ### 平方完成
