@@ -25,6 +25,19 @@ localStorage.removeItem('MathJax-Menu-Settings');
 location.reload();
 ```
 
+## MathJax の display mode の中央揃え設定を打ち消す
+
+以下の文を markdown に書き込めばよい。
+
+```html
+<style>
+mjx-container[display="true"] {
+    justify-content: flex-start !important;
+    text-align: left !important;
+}
+</style>
+```
+
 ## Tikz Online Editor
 
 $\LaTeX$ をインストールせずに Tikz の表示内容を確認できる Web サイト。
