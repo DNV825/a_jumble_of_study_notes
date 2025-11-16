@@ -6,11 +6,10 @@ category: Jekyll
 layout: post
 extra_css:
   - assets/tikzjax/fonts.css
+  - assets/tikzjax/tikzjax-adjuster.css
   - assets/mathjax/align-left.css
 extra_header_js: assets/tikzjax/tikzjax.js
 ---
-
-<link rel="stylesheet" href="/a_jumble_of_study_notes/assets/mathjax/align-left.css">
 
 ## TikZJax について
 
