@@ -28,8 +28,10 @@ JavaScript で tikz を利用可能にするもの。すごい。参考：<https
 
 Jekyll で TikzJax を利用する場合、以下のように記述すればよい。
 
+{% raw %}
+{% highlight html %}
 ```html
-&#123; % raw % &#125;
+{% raw %}
 <script type="text/tikz">
 \begin{document}
 \begin{tikzpicture}
@@ -37,8 +39,10 @@ Jekyll で TikzJax を利用する場合、以下のように記述すればよ�
 \end{tikzpicture}
 \end{document}
 </script>
-&#123;% endraw %&#125;
+{% endraw %}
 ```
+{% endhighlight %}
+{% endraw %}
 
 {% raw %}
 <script type="text/tikz">
