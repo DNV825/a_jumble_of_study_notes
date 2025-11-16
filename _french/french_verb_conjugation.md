@@ -80,35 +80,35 @@ aller は動詞としては「（～へ）行く」という意味で用いら�
 
 <table>
   <tr><th>No</th><th>不定詞<br>意味<br>過去分詞</th><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td rowspan="13">No.1</td><td rowspan="13">avoir /avwar/<br>～を持つ<br>eu /y/</td><td>j'ai</td><td>/ʒe/</td><td>j'avais</td><td>//</td><td>j'aie</td><td>//</td></tr>
-  <tr><td>tu as</td><td>//</td><td>tu avais</td><td>//</td><td>tu aies</td><td>//</td></tr>
-  <tr><td>il a</td><td>//</td><td>il avait</td><td>//</td><td>il ait</td><td>//</td></tr>
-  <tr><td>nous avons</td><td>//</td><td>nous avions</td><td>//</td><td>nous ayons</td><td>//</td></tr>
-  <tr><td>vous avez</td><td>//</td><td>vous aviez</td><td>//</td><td>vous ayez</td><td>//</td></tr>
-  <tr><td>ils ont</td><td>//</td><td>ils avaient</td><td>//</td><td>ils aient</td><td>//</td></tr>
+  <tr><td rowspan="13">No.1</td><td rowspan="13">avoir /avwar/<br>～を持つ<br>eu /y/</td><td>j'ai</td><td>/ʒe/</td><td>j'avais</td><td>/ʒavɛ/</td><td>j'aie</td><td>/ʒɛ/</td></tr>
+  <tr><td>tu as</td><td>/tya/</td><td>tu avais</td><td>/tyavɛ/</td><td>tu aies</td><td>/tyɛ/</td></tr>
+  <tr><td>il a</td><td>/ila/</td><td>il avait</td><td>/ilavɛ/</td><td>il ait</td><td>/ilɛ/</td></tr>
+  <tr><td>nous avons</td><td>/nuzavɔ̃/</td><td>nous avions</td><td>/nuzavjɔ̃/</td><td>nous ayons</td><td>/nuzɛjɔ̃/</td></tr>
+  <tr><td>vous avez</td><td>/vuzave/</td><td>vous aviez</td><td>/vuzavje/</td><td>vous ayez</td><td>/vuzɛje/</td></tr>
+  <tr><td>ils ont</td><td>/ilzɔ̃/</td><td>ils avaient</td><td>/ilzavɛ/</td><td>ils aient</td><td>/ilzɛ/</td></tr>
   <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>j'ai eu /ʒe/</td><td>//</td><td>j'aurai</td><td>//</td><td></td><td></td></tr>
-  <tr><td>tu as eu</td><td>//</td><td>tu auras</td><td>//</td><td>aie</td><td>//</td></tr>
-  <tr><td>il a eu</td><td>//</td><td>il aura</td><td>//</td><td></td><td></td></tr>
-  <tr><td>nous avons eu</td><td>//</td><td>nous aurons</td><td>//</td><td>ayons</td><td>//</td></tr>
-  <tr><td>vous avez eu</td><td>//</td><td>vous aurez</td><td>//</td><td>ayez</td><td>//</td></tr>
-  <tr><td>ils ont eu</td><td>//</td><td>ils auront</td><td>//</td><td></td><td></td></tr>
-  <tr><td rowspan="14">No.2</td><td rowspan="14">être<br>～だ、である<br>été</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>je suis</td><td>//</td><td>j'étais</td><td>//</td><td>je sois</td><td>//</td></tr>
-  <tr><td>tu es</td><td>//</td><td>tu étais</td><td>//</td><td>tu sois</td><td>//</td></tr>
-  <tr><td>il est</td><td>//</td><td>il était</td><td>//</td><td>il soit</td><td>//</td></tr>
-  <tr><td>nous sommes</td><td>//</td><td>nous étions</td><td>//</td><td>nous soyons</td><td>//</td></tr>
-  <tr><td>vous êtes</td><td>//</td><td>vous étiez</td><td>//</td><td>vous soyez</td><td>//</td></tr>
-  <tr><td>ils sont</td><td>//</td><td>ils étaient</td><td>//</td><td>ils soient</td><td>//</td></tr>
+  <tr><td>j'ai eu</td><td>/ʒe/ /y/</td><td>j'aurai</td><td>/ʒɔre/</td><td></td><td></td></tr>
+  <tr><td>tu as eu</td><td>/tya/ /y/</td><td>tu auras</td><td>/tyɔra/</td><td>aie</td><td>/ɛ/</td></tr>
+  <tr><td>il a eu</td><td>/ila/ /y/</td><td>il aura</td><td>/ilɔra/</td><td></td><td></td></tr>
+  <tr><td>nous avons eu</td><td>/nuzavɔ̃/ /y/</td><td>nous aurons</td><td>/nuzɔrɔ̃/</td><td>ayons</td><td>/ɛjɔ̃/</td></tr>
+  <tr><td>vous avez eu</td><td>/vuzave/ /y/</td><td>vous aurez</td><td>/vuzɔre/</td><td>ayez</td><td>/ɛje/</td></tr>
+  <tr><td>ils ont eu</td><td>/ilzɔ̃/ /y/</td><td>ils auront</td><td>/ilzɔrɔ̃/</td><td></td><td></td></tr>
+  <tr><td rowspan="14">No.2</td><td rowspan="14">être /ɛtr/<br>～だ、である<br>été /ete/</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
+  <tr><td>je suis</td><td>/ʒətɛ/</td><td>j'étais</td><td>/ʒetɛ/</td><td>je sois</td><td>/ʒəswa/</td></tr>
+  <tr><td>tu es</td><td>/tyɛ/</td><td>tu étais</td><td>/tyetɛ/</td><td>tu sois</td><td>/tyswa/</td></tr>
+  <tr><td>il est</td><td>/ilɛ/</td><td>il était</td><td>/iletɛ/</td><td>il soit</td><td>/ilswa/</td></tr>
+  <tr><td>nous sommes</td><td>/nuzetjɔ̃/</td><td>nous étions</td><td>/nuzetjɔ̃/</td><td>nous soyons</td><td>/nuswajɔ̃/</td></tr>
+  <tr><td>vous êtes</td><td>/vuzetje/</td><td>vous étiez</td><td>/vezetje/</td><td>vous soyez</td><td>/vuswaje/</td></tr>
+  <tr><td>ils sont</td><td>/ilzetɛ/</td><td>ils étaient</td><td>/ilzetɛ/</td><td>ils soient</td><td>/ilswa/</td></tr>
   <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>j'ai été</td><td>//</td><td>je serai</td><td>//</td><td></td><td></td></tr>
-  <tr><td>tu as été</td><td>//</td><td>tu seras</td><td>//</td><td>sois</td><td>//</td></tr>
+  <tr><td>j'ai été</td><td>/ʒe/ /ete/</td><td>je serai</td><td>//</td><td></td><td></td></tr>
+  <tr><td>tu as été</td><td>/tya/ /ete/</td><td>tu seras</td><td>//</td><td>sois</td><td>//</td></tr>
   <tr><td>il a été</td><td>//</td><td>il sera</td><td>//</td><td></td><td></td></tr>
   <tr><td>nous avons été</td><td>//</td><td>nous serons</td><td>//</td><td>soyons</td><td>//</td></tr>
   <tr><td>vous avez été</td><td>//</td><td>vous serez</td><td>//</td><td>soyez</td><td>//</td></tr>
   <tr><td>ils ont été</td><td>//</td><td>ils seront</td><td>//</td><td></td><td></td></tr>
   <tr><td rowspan="14">No.3</td><td rowspan="14">《er 動詞》<br>parler<br>～を話す<br>parlé</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>ju parl<span style="color: #ff0000;">e</span></td><td>//</td><td>je parl<span style="color: #ff0000;">ais</span></td><td>//</td><td>je parl<span style="color: #ff0000;">e</span></td><td>//</td></tr>
+  <tr><td>je parl<span style="color: #ff0000;">e</span></td><td>//</td><td>je parl<span style="color: #ff0000;">ais</span></td><td>//</td><td>je parl<span style="color: #ff0000;">e</span></td><td>//</td></tr>
   <tr><td>tu parl<span style="color: #ff0000;">es</span></td><td>//</td><td>tu parl<span style="color: #ff0000;">ais</span></td><td>//</td><td>tu parl<span style="color: #ff0000;">es</span></td><td>//</td></tr>
   <tr><td>il parl<span style="color: #ff0000;">e</span></td><td>//</td><td>il parl<span style="color: #ff0000;">ait</span></td><td>//</td><td>il parl<span style="color: #ff0000;">e</span></td><td>//</td></tr>
   <tr><td>nous parl<span style="color: #ff0000;">ons</span></td><td>//</td><td>nous parl<span style="color: #ff0000;">ions</span></td><td>//</td><td>nous parl<span style="color: #ff0000;">ions</span></td><td>//</td></tr>
