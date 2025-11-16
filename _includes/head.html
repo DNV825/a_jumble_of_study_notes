@@ -50,8 +50,30 @@
     {%- endfor -%}
 {% endif %}
 
+{% if page.extra_css %}
+    {%- for extra_css in page.extra_css -%}
+        {%- assign starts_with = extra_css | slice: 0,4 -%}
+        {% if starts_with == "http" %}
+<link rel="stylesheet" href="{{ extra_css }}">
+        {%- else -%}
+<link rel="stylesheet" href="{{site.baseurl}}/{{ extra_css }}">
+        {%- endif -%}
+    {%- endfor -%}
+{% endif %}
+
 {% if site.extra_header_js %}
     {%- for extra_js in site.extra_header_js -%}
+        {%- assign starts_with = extra_js | slice: 0,4  -%}
+        {% if starts_with == "http" %}
+<script src="{{ extra_js }}"></script>
+        {%- else -%}
+<script src="{{site.baseurl}}/{{ extra_js }}"></script>
+        {%- endif -%}
+    {%- endfor -%}
+{% endif %}
+
+{% if page.extra_header_js %}
+    {%- for extra_js in page.extra_header_js -%}
         {%- assign starts_with = extra_js | slice: 0,4  -%}
         {% if starts_with == "http" %}
 <script src="{{ extra_js }}"></script>

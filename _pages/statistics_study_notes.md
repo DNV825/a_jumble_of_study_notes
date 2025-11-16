@@ -4,6 +4,10 @@ author: DNV825
 date: 2025-03-22
 category: Jekyll
 layout: post
+extra_css:
+  - assets/tikzjax/fonts.css
+  - assets/mathjax/align-left.css
+extra_header_js: assets/tikzjax/tikzjax.js
 ---
 
 <link rel="stylesheet" href="/a_jumble_of_study_notes/assets/mathjax/align-left.css">
@@ -154,7 +158,7 @@ $$
 $$
 %$\newcommand{\arraystretch}{2.0}
 \begin{align*}
-&\text{n が奇数の場合}: x_{\cfrac{(n+1)}{2}}\\
+&\text{n が奇数の場合}: x_{\frac{(n+1)}{2}}\\
 &\text{n が偶数の場合}: \cfrac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}\\
 \end{align*}
 $$
@@ -168,7 +172,7 @@ $$
 {% raw %}
 <script type="text/tikz">
 \begin{document}
-\begin{tikzpicture}[scale=1.0]
+\begin{tikzpicture}[scale=0.1]
 
 % 大枠の四角
 \draw (0,0) rectangle (160,100);
