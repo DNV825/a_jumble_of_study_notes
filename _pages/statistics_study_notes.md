@@ -6,6 +6,8 @@ category: Jekyll
 layout: post
 ---
 
+<link rel="stylesheet" href="/a_jumble_of_study_notes/assets/mathjax/align-left.css">
+
 ## TikZJax について
 
 JavaScript で tikz を利用可能にするもの。すごい。参考：<https://tikzjax.com/>
@@ -26,18 +28,22 @@ Jekyll で TikzJax を利用する場合、以下のように記述すればよ�
 ```html
 {% raw %}
 <script type="text/tikz">
+\begin{document}
 \begin{tikzpicture}
 \draw (0,0) circle (1in);
 \end{tikzpicture}
+\end{document}
 </script>
 {% endraw %}
 ```
 
 {% raw %}
 <script type="text/tikz">
+\begin{document}
 \begin{tikzpicture}
 \draw (0,0) circle (1in);
 \end{tikzpicture}
+\end{document}
 </script>
 {% endraw %}
 
@@ -162,7 +168,7 @@ $$
 {% raw %}
 <script type="text/tikz">
 \begin{document}
-\begin{tikzpicture}[scale=0.1]
+\begin{tikzpicture}[scale=1.0]
 
 % 大枠の四角
 \draw (0,0) rectangle (160,100);
@@ -196,28 +202,5 @@ $$
 
 \end{tikzpicture}
 \end{document}
-</script>
-{% endraw %}
-
-{% raw %}
-<script type="text/tikz">
-\begin{tikzpicture}[scale=0.1]
-\draw (0,0) rectangle (160,100);
-\fill[orange!30] (0,3) rectangle (3,100);
-\draw[thick] (0,100) -- (-10,100);
-\draw[thick, <->] (-5,4) -- (-5,99)  node [midway, left,  align=center] {$99\%$};
-\draw[thick] (0,3) -- (-10,3);
-\draw[->] (10,50) -- (5,50) node[right] at (10,50) {Positive (true)};
-\fill[blue!20] (0,100) rectangle (160,97);
-\draw[<->] (10,97) -- (10,100) node[midway,right]{$1\%$};
-\draw[thick, ->] (75,93) -- (75,97) node[below] at (75,92) {Positive (false)};
-\draw[thick, <->] (0,103) -- (3, 103) node[midway, above,align=center] at(0, 105) {P(B) = 0.01\%\\(carrier) };
-\draw[thick, <->] (3,103) -- (160,103) node [midway, above, align=center] {P($\overline{B}$) = 99.99\%\\(not carrier)};
-\draw (200,90) -- (180,90) node[left, align=right] {P(A $\vert$ B) =};
-\fill[orange!30] (187,96) rectangle (193,92);
-\fill[orange!30] (180,88) rectangle (186,84);
-\draw (190,86) node {$+$};
-\fill[blue!20] (194,88) rectangle (200,84);
-\end{tikzpicture}
 </script>
 {% endraw %}
