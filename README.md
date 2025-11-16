@@ -4,7 +4,7 @@ title: DNV825 a jumble of study notes
 permalink: /
 ---
 
-雑多な勉強ノートの置き場所。
+雑多な勉強ノートの置き場所。元ネタはこれ → <https://github.com/DNV825/a_jumble_of_study_notes>
 
 ## Jekyll の参考資料
 
