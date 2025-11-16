@@ -91,10 +91,10 @@ plugins:
 
 # Jekyll で GitHub Pages を生成する際、全ページに適用するスタイルシート.
 extra_css:
-  # - "https://cdn.jsdelivr.net/gh/mzlogin/rouge-themes@master/github.css" # GitHub 相当のコードブロックハイライトを提供する CSS.
+  # - "https://cdn.jsdelivr.net/gh/mzlogin/rouge-themes@master/github.css"       # GitHub 相当のコードブロックハイライトを提供する CSS.
   - "https://cdn.jsdelivr.net/npm/github-css@0.1.1/index.min.css"
-  - "https://tikzjax.com/v1/fonts.css"                                   # TikZJaxフォントCSSの読み込み
+  # - "https://dnv825.github.io/a_jumble_of_study_notes/assets/tikzjax/fonts.css"  # https://github.com/bill-ion/tikzjax-live/ からダウンロードした TikZJaxフォントCSSの読み込み
 
 # Jekyll で GitHub Pages を生成する際、全ページに適用する JavaScript.
 extra_header_js:
-  - "https://tikzjax.com/v1/tikzjax.js"     # TikZJax本体JSの読み込み
+  # - "https://dnv825.github.io/a_jumble_of_study_notes/assets/tikzjax/tikzjax.js" # https://github.com/bill-ion/tikzjax-live/ からダウンロードした TikZJax 本体 JS の読み込み

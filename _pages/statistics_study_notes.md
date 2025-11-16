@@ -4,18 +4,11 @@ author: DNV825
 date: 2025-03-22
 category: Jekyll
 layout: post
+extra_css: 
+  - /assets/tikzjax/fonts.css
+  - /assets/mathjax/align-left.css
+extra_header_js: /assets/tikzjax/tikzjax.js
 ---
-
-<!-- ローカル確認時は有効化、プッシュ時には無効化すること。
-<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
-<script src="https://tikzjax.com/v1/tikzjax.js"></script> -->
-
-<style>
-mjx-container[display="true"] {
-    justify-content: flex-start !important;
-    text-align: left !important;
-}
-</style>
 
 ## TikZJax について
 
@@ -159,7 +152,7 @@ $$
 $$
 %$\newcommand{\arraystretch}{2.0}
 \begin{align*}
-&\text{n が奇数の場合}: x_{\frac{(n+1)}{2}}\\
+&\text{n が奇数の場合}: x_{\cfrac{(n+1)}{2}}\\
 &\text{n が偶数の場合}: \cfrac{x_{\frac{n}{2}} + x_{\frac{n}{2}+1}}{2}\\
 \end{align*}
 $$
@@ -170,8 +163,9 @@ $$
 
 ## ベイズの定理
 
-<!-- {% raw %}
+{% raw %}
 <script type="text/tikz">
+\begin{document}
 \begin{tikzpicture}[scale=0.1]
 
 % 大枠の四角
@@ -205,8 +199,9 @@ $$
 \fill[blue!20] (194,88) rectangle (200,84);
 
 \end{tikzpicture}
+\end{document}
 </script>
-{% endraw %} -->
+{% endraw %}
 
 {% raw %}
 <script type="text/tikz">
