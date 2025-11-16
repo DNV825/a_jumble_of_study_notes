@@ -4,10 +4,6 @@ author: DNV825
 date: 2025-03-22
 category: Jekyll
 layout: post
-extra_css: 
-  - /assets/tikzjax/fonts.css
-  - /assets/mathjax/align-left.css
-extra_header_js: /assets/tikzjax/tikzjax.js
 ---
 
 ## TikZJax について
