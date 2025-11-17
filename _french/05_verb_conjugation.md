@@ -1,5 +1,5 @@
 ---
-title: 5. French verb conjugation
+title: 5. verb conjugation
 author: DNV825
 date: 2025-08-20
 category: Jekyll

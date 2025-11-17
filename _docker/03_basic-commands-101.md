@@ -1,7 +1,7 @@
 ---
-title: docker study notes - commands
+title: 3. basic commands 101
 author: DNV825
-date: 2025-01-02
+date: 2025-01-03
 category: Jekyll
 layout: post
 created: 2025-10-25
@@ -9,7 +9,7 @@ created: 2025-10-25
 
 docker コマンドについてまとめる。とりあえず、すぐに必要そうなものだけ。
 
-## docker の用語のイメージ
+## 3.1. docker の用語のイメージ
 
 ```mermaid
 architecture-beta
@@ -37,7 +37,7 @@ architecture-beta
     exited:B -[rm]-> T:trashcan2
 ```
 
-### `docker image` コマンドについて
+### 3.1.1. `docker image` コマンドについて
 
 | コマンド | 効力 |
 | --- | --- |
@@ -45,7 +45,7 @@ architecture-beta
 | `docker image ls` | ローカル環境に存在するイメージ一覧を表示する。 |
 | `docker image rm {イメージ名}` | 指定したイメージ一を削除する。 |
 
-### `docker container` コマンドについて
+### 3.1.2. `docker container` コマンドについて
 
 | コマンド | 効力 |
 | --- | --- |

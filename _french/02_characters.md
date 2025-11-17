@@ -1,5 +1,5 @@
 ---
-title: 2. French characters
+title: 2. characters
 author: DNV825
 date: 2025-08-17
 category: Jekyll

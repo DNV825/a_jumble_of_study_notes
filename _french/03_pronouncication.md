@@ -1,5 +1,5 @@
 ---
-title: 3. French pronouncication
+title: 3. pronouncication
 author: DNV825
 date: 2025-08-18
 category: Jekyll

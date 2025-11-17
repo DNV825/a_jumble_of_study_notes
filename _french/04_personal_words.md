@@ -1,5 +1,5 @@
 ---
-title: 4. French personal words
+title: 4. personal words
 author: DNV825
 date: 2025-08-19
 category: Jekyll
