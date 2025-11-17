@@ -1,5 +1,5 @@
 ---
-title: French verb conjugation
+title: 5. French verb conjugation
 author: DNV825
 date: 2025-08-20
 category: Jekyll
@@ -8,11 +8,11 @@ layout: post
 
 動詞の活用について。
 
-## 動詞の活用ってなんのこと？
+## 5.1. 動詞の活用ってなんのこと？
 
 動詞の活用とは、主語の人称や時制、数（単数・複数）、法（直接法・条件法・接続法・命令法）によって動詞の語尾が変化することを言う。
 
-## 動詞の 4 つの法
+## 5.2. 動詞の 4 つの法
 
 法とは、話し手の心的態度による動詞の活用の分類のこと。話し手が文の内容をどのように捉えているかが示される。
 
@@ -28,7 +28,7 @@ layout: post
 命令法
 : 文の内容は**相手に対する命令や指示**であると捉えている。
 
-## 時制
+## 5.3. 時制
 
 <table>
   <tr><th>法</th><th>時制</th><th>説明</th></tr>
@@ -50,11 +50,11 @@ layout: post
   <tr><td>過去形</td><td>（ほぼ使わない。）</td></tr>
 </table>
 
-## 不定詞
+## 5.4. 不定詞
 
 動詞の活用していない形。辞書の見出し語に用いられている。準助動詞の後や前置詞の後に置いて用いる。
 
-## 順助動詞
+## 5.5. 順助動詞
 
 後ろに動詞の不定詞を置いて用いる動詞。
 
@@ -74,9 +74,9 @@ aller は動詞としては「（～へ）行く」という意味で用いら�
 - Je **vais** travailler demain.
   私は明日働くつもりです。
 
-## 重要な動詞を覚えよう！
+## 5.6. 重要な動詞を覚えよう！
 
-### 基本の動詞 4 種
+### 5.6.1. 基本の動詞 4 種
 
 <table>
   <tr><th>No</th><th>不定詞<br>意味<br>過去分詞</th><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
@@ -137,7 +137,7 @@ aller は動詞としては「（～へ）行く」という意味で用いら�
   <tr><td>ils ont fini</td><td>//</td><td>ils fini<span style="color: #ff0000;">ront</span></td><td>//</td><td></td><td></td></tr>
 </table>
 
-### 超重要動詞 10 選
+### 5.6.2. 超重要動詞 10 選
 
 <table>
   <tr><th>No</th><th>不定詞<br>意味<br>過去分詞</th><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
@@ -282,7 +282,7 @@ aller は動詞としては「（～へ）行く」という意味で用いら�
   <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
 </table>
 
-### 重要動詞 12 選
+### 5.6.3. 重要動詞 12 選
 
 <table>
   <tr><th>No</th><th>不定詞<br>意味<br>過去分詞</th><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>

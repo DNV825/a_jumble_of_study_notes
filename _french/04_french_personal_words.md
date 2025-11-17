@@ -1,5 +1,5 @@
 ---
-title: French personal words
+title: 4. French personal words
 author: DNV825
 date: 2025-08-19
 category: Jekyll
@@ -8,7 +8,7 @@ layout: post
 
 人称に関わる語について。
 
-## 人称代名詞（a personal pronoun / un personnel pronom）
+## 4.1. 人称代名詞（a personal pronoun / un personnel pronom）
 
 `()` は elision した形。
 
@@ -28,7 +28,7 @@ layout: post
 
 vous は複数の聞き手（あなた方、君たち）のほか、距離をとるべき単数の聞き手（あなた）を指す。
 
-### 強勢形とは
+### 4.1.1. 強勢形とは
 
 どうも、いまひとつハッキリと理解できないのだが、以下の場合は強勢形を使うらしい。
 
@@ -38,7 +38,7 @@ vous は複数の聞き手（あなた方、君たち）のほか、距離をと
 - 単独で代名詞を使うとき（答えだけなど）
 - C'est 構文と一緒に
 
-### 代名詞 on
+### 4.1.2. 代名詞 on
 
 主語として用いる on という代名詞がある。 3 人称単数として扱う。 on を主語の場合、再帰代名詞は se となる。
 
@@ -49,7 +49,7 @@ on が nous の代わりをする場合、属詞（※1）や過去分詞の性�
 
 ※1: 属詞とは、主に分の主語の性質や状態を表す名詞句や形容詞句のこと。主語とは通常、動詞 être でつながる。
 
-## 所有形容詞（a possesive adjective / un possessif adjectif）
+## 4.2. 所有形容詞（a possesive adjective / un possessif adjectif）
 
 `()` は母音または無音の h の前の形。
 
@@ -71,7 +71,7 @@ on が nous の代わりをする場合、属詞（※1）や過去分詞の性�
 - **mon** meilleur ami
   私の大親友
 
-## 所有代名詞（a possessive pronoun / un possessif pronom）
+## 4.3. 所有代名詞（a possessive pronoun / un possessif pronom）
 
 <table>
   <tr><th rowspan="2">所有代名詞の前に置く定冠詞</th><th>男性単数</th><th>女性単数</th><th>男性複数</th><th>女性複数</th></tr>
