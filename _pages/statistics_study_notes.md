@@ -93,8 +93,9 @@ $$
 
 ### 対数法則の証明
 
-$(1) \log_a{M} + \log_a{N} = \log_a{MN}$
-: $$
+#### $(1) \log_a{M} + \log_a{N} = \log_a{MN}$
+
+$$
 \begin{align*}
 & \log_a{M} = x, \space \log_a{N} = y \space \text{と置くと、対数の定義より} \\
 & a^x = M, a^y = N \space \text{よって、指数法則により} \\
