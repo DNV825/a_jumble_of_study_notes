@@ -9,7 +9,9 @@ created: 2025-10-25
 
 docker コマンドについてまとめる。とりあえず、すぐに必要そうなものだけ。
 
-## 3.1. docker の用語のイメージ
+## 3.1. docker コマンドについて
+
+### 3.1.1 登場する用語のイメージ
 
 ```mermaid
 architecture-beta
@@ -37,7 +39,7 @@ architecture-beta
     exited:B -[rm]-> T:trashcan2
 ```
 
-### 3.1.1. `docker image` コマンドについて
+### 3.1.2. `docker image` コマンドについて
 
 | コマンド | 効力 |
 | --- | --- |
@@ -45,7 +47,7 @@ architecture-beta
 | `docker image ls` | ローカル環境に存在するイメージ一覧を表示する。 |
 | `docker image rm {イメージ名}` | 指定したイメージ一を削除する。 |
 
-### 3.1.2. `docker container` コマンドについて
+### 3.1.3. `docker container` コマンドについて
 
 | コマンド | 効力 |
 | --- | --- |

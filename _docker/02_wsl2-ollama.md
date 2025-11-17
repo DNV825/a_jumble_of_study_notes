@@ -220,7 +220,9 @@ ctrl+cで終了。 GPU Memory Usage に使用量が表示されるはずなの�
 Stable Diffusion WebUI AUTOMATIc1111 Dockerは後にしよう。とりあえず、あれはWindodws版で動かした実績があるので。
 でも、pythonのバージョン固定とかが必要なので、dockerにしたほうが良いのかな。
 
-## 2.2. docker コンテナの Ollama をアップデートする
+## 2.2. Ollama をアップデートする
+
+### 2.2.1. docker コンテナの Ollama をアップデートする
 
 docker コンテナを再構築する必要がある。ちなみに、 -i: interactive, -t: tty, -d: detach, -v: volume という意味である。
 
@@ -251,7 +253,7 @@ hf.co/Orenguteng/Llama-3-8B-Lexi-Uncensored-GGUF:F16    fd9d793ede83    16 GB   
 jean-luc/tiger-gemma-9b-v3:fp16                         eeb453a4d354    18 GB     9 months ago
 ```
 
-### 2.2.1. 通常インストールした Ollama をアップデートする
+### 2.2.2. 通常インストールした Ollama をアップデートする
 
 以下のように docker コンテナをインタラクティブかつターミナルありで動かし、 ollama 公式ドキュメントに従って ollama を再インストールするスクリプトを実行すればよい。なお、以下の実行例は docker 上で実行したものなので、最終的にはサーバー側とクライアント側のバージョンに差が出てしまっている。失敗例なので、 docker 上で実行しないように。
 
