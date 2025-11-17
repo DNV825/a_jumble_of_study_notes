@@ -48,28 +48,26 @@ Jekyll で TikzJax を利用する場合、以下のように記述すればよ�
 </script>
 {% endraw %}
 
-## 指数と対数
-
-対数はほぼ使わないけど。でも、たまに出てくるような…。
+## 指数
 
 ### 指数法則
 
 指数に対して以下の法則が成り立つ。
 
 $$
-%\newcommand{\arraystretch}{2.0}
 \begin{align*}
-& a \neq 0, b \neq 0 とし、m, n を整数とする \\
-& (1) \space a^m a^n=a^{m+n} && (2) \space \cfrac{a^m}{a^n} = a^{m-n} \\
-& (3) \space (a^m)^n = a^{m n} && (4) \space (ab)^n = a^n b^n \\
-& (5) \space a^0 = 1 && (6) \space a^{-1} = \cfrac{1}{a} \\
-& (7) \space a^{-n} = \cfrac{1}{a^n}
+&a \neq 0, b \neq 0 とし、&&m, n を整数とする\\
+&(1) \space a^m a^n = a^{m+n}        &&(2) \space \cfrac{a^m}{a^n} = a^{m-n} &&(3) \space (a^m)^n = a^{m n} \\
+&(4) \space (ab)^n  = a^n b^n        &&(5) \space a^0 = 1                    &&(6) \space a^{-1}  = \cfrac{1}{a} \\
+&(7) \space a^{-n}  = \cfrac{1}{a^n}
 \end{align*}
 $$
 
+## 対数
+
 ### 対数の定義
 
-対数の定義は以下の通り。
+対数の定義は以下の通り。対数はほぼ使わないけど。
 
 $$
 \begin{align*}
@@ -87,18 +85,13 @@ $$
 対数に対して以下の法則が成り立つ。
 
 $$
-%\newcommand{\arraystretch}{2.0}
 \begin{align*}
-& (1) \space \log_a{M} + \log_a{N} = \log_a{MN} \\
-& (2) \space \log_a{M^p} = p\log_a{M} \\
-& (3) \space \log_a{\cfrac{1}{M}} = - \log_a{M} \\
-& (4) \space \log_a{M} - \log_a{N} = \log_a{\cfrac{M}{N}} \\
-& (5) \space \log_a{1} = 0 \\
-& (6) \space \log_a{b} = \cfrac{\log_c{b}}{\log_c{a}}
+&(1) \space \log_a{M} + \log_a{N} = \log_a{MN}           &&(2) \space \log_a{M^p} = p\log_a{M}  &&(3) \space \log_a{\cfrac{1}{M}} = - \log_a{M} \\
+&(4) \space \log_a{M} - \log_a{N} = \log_a{\cfrac{M}{N}} &&(5) \space \log_a{1}   = 0           &&(6) \space \log_a{b}            = \cfrac{\log_c{b}}{\log_c{a}}
 \end{align*}
 $$
 
-#### 対数法則の証明
+### 対数法則の証明
 
 $(1) \log_a{M} + \log_a{N} = \log_a{MN}$
 : $$
@@ -107,6 +100,60 @@ $(1) \log_a{M} + \log_a{N} = \log_a{MN}$
 & a^x = M, a^y = N \space \text{よって、指数法則により} \\
 & a^{x+y} = MN \space \text{となる。これは対数の定義より} \\
 & \log_a{MN} = x + y \space \text{であることを表す。}
+\end{align*}
+$$
+
+$(2) \space \log_a{M^p} = p\log_a{M}$
+: $$
+\begin{align*}
+& \log_a{M} = x \text{と置くと、対数の定義より、} a^x = M \\
+& \text{よって、指数法則を使うと、} a^{px} = M^p \\
+& \text{となる。これは対数の定義より} \log_a{M^p} = px
+\end{align*}
+$$
+
+$(3) \space \log_a{\cfrac{1}{M}} = - \log_a{M}$
+: $$
+\begin{align*}
+& \text{(2) において、} \space p = -1 \space \text{とすれば得られる。} \\
+& \log_a{M^{-1}} = \log_a{\cfrac{1}{M}} = {-1}\log_a{M}
+\end{align*}
+$$
+
+$(4) \space \log_a{M} - \log_a{N} = \log_a{\cfrac{M}{N}}$
+: $$
+\begin{align*}
+& \text{(1) において、 N ではなく} \cfrac{1}{N} \text{を指定すると、} \\
+& \log_a{M} + \underline{\log_a{\cfrac{1}{N}}} = \log_a{\left(M \cfrac{1}{N} \right)} = \log_a{\cfrac{M}{N}} \\
+& \text{となる。} \\
+\\
+& \text{下線部は (3) より、} -1\log_a{N} \text{になるため、} \\
+& \log_a{M} - \log_a{N} = \log_a{\cfrac{M}{N}} \\
+& \text{が成立する。}
+\end{align*}
+$$
+
+$(5) \space \log_a{1} = 0$
+: $$
+\begin{align*}
+& a^0 = 1 \text{であることから、対数の定義より} \log_a{1} = 0 \text{を導ける。}
+\end{align*}
+$$
+
+$(6) \space \log_a{b} = \cfrac{\log_c{b}}{\log_c{a}}$
+: $$
+\begin{align*}
+& \text{対数の定義より、} a^p = b \Leftrightarrow \log_a{b} = p \text{である。} \\
+& \text{このとき、左側の式の} \space p \space \text{に} \space \log_a{b} \space \text{を代入すると、} \space a^{\log_a{b}} = b \space \text{が成立する。} \\
+& \text{ここで、両辺の対数をとる。対数の底は} \space c \space \text{とする。すると、} \\
+\end{align*}
+$$
+$$
+\begin{align*}
+& &a^{\log_a{b}} &= b \\
+& &\log_c{a^{\log_a{b}}} &= \log_c{b} \\
+& &\log_a{b} \log_c{a} &= \log_c{b} \\
+& &\log_a{b} &= \cfrac{\log_c{b}}{\log_c{a}}
 \end{align*}
 $$
 
@@ -119,12 +166,11 @@ $$
 $$
 %\newcommand{\arraystretch}{2.0}
 \begin{align*}
-&3x^2  - 12x + 6 \\
-& = 3 (x^2 - 4x) + 6 & \dots & \text{ $x^2$ の係数を外に出す } \\
-& = 3 (x^2 -2 \cdot 2x + 2^2 - 2^2) + 6 & \dots & \text{ $-4x$ の係数を $\cfrac{1}{2}$ にし、かつ $\cfrac{1}{2}$ にした値の2乗を足し引きする}\\
-& = 3 \{(x - 2)^2 - 4\} + 6 & \dots & \text{ $x^2 -2 \cdot 2x + 2^2$ を因数分解する }\\
-& = 3 (x - 2)^2 - 12 + 6 & \dots & \text{ $3$ を展開する } \\
-& = 3 (x - 2)^2 - 6 & \dots & \text{ 数値を計算しておしまい }
+&3x^2 - 12x + 6 &&= 3 (x^2 - 4x) + 6                    && \dots \text{ $x^2$ の係数を外に出す } \\
+&               &&= 3 (x^2 -2 \cdot 2x + 2^2 - 2^2) + 6 && \dots \text{ $-4x$ の係数を $\frac{1}{2}$ にし、かつ $\frac{1}{2}$ にした値の2乗を足し引きする} \\
+&               &&= 3 \{(x - 2)^2 - 4\} + 6             && \dots \text{ $x^2 -2 \cdot 2x + 2^2$ を因数分解する } \\
+&               &&= 3 (x - 2)^2 - 12 + 6                && \dots \text{ $3$ を展開する } \\
+&               &&= 3 (x - 2)^2 - 6                     && \dots \text{ 数値を計算しておしまい }
 \end{align*}
 $$
 
