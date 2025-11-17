@@ -1,5 +1,5 @@
 ---
-title: French study notes
+title: 1. French study notes
 author: DNV825
 date: 2025-08-16
 category: Jekyll
