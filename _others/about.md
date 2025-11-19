@@ -55,7 +55,7 @@ JavaScript で tikz を利用可能にするもの。すごい。参考：<https
 
 `<script type="text/tikz"></script>` タグの中に tikz を記述する。`html {cmd=true hide=true}` を指定しても、Markdown Preview Enhanced では実行してくれないようだ。
 
-通常の TikzJax は % から始まるコメントが使えないが、[bill-ion さんの作成した fork](https://github.com/bill-ion/tikzjax-live/) ならコメントが使える。通常の TikzJax は 2 バイト文字の表示は非対応。テキストは英語を使うのが無難。あと、もともとの TikzJax は一部の文字がおかしな表示になる（例えば "|" が "♣" になる。）この問題は bill-on さんバージョンだと解決されている。
+通常の TikzJax は % から始まるコメントが使えないが、[bill-ion さんの作成した fork](https://github.com/bill-ion/tikzjax-live/) ならコメントが使える。通常の TikzJax は 2 バイト文字の表示は非対応。テキストは英語を使うのが無難。あと、もともとの TikzJax は一部の文字がおかしな表示になる（例えば "\|" が "♣" になる。）この問題は bill-on さんバージョンだと解決されている。
 
 Jekyll で TikzJax を利用する場合、以下のように記述すればよい。それをさらに &#123;% raw %&#125; ... &#123;% endraw %&#125; で囲むこと。
 
@@ -68,16 +68,6 @@ Jekyll で TikzJax を利用する場合、以下のように記述すればよ�
 \end{document}
 </script>
 ```
-
-{% raw %}
-<script type="text/tikz">
-\begin{document}
-\begin{tikzpicture}
-\draw (0,0) circle (1in);
-\end{tikzpicture}
-\end{document}
-</script>
-{% endraw %}
 
 ### TikzJax Live
 
