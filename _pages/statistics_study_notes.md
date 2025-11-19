@@ -11,43 +11,6 @@ extra_css:
 extra_header_js: assets/tikzjax/tikzjax.js
 ---
 
-## TikZJax について
-
-JavaScript で tikz を利用可能にするもの。すごい。参考：<https://tikzjax.com/>
-
-以下のようにインクルードし、
-
-```html
-<link rel="stylesheet" type="text/css" href="https://tikzjax.com/v1/fonts.css">
-<script src="https://tikzjax.com/v1/tikzjax.js"></script>
-```
-
-`<script type="text/tikz"></script>` タグの中に tikz を記述する。`html {cmd=true hide=true}` を指定しても、Markdown Preview Enhanced では実行してくれないようだ。
-
-通常の TikzJax は % から始まるコメントが使えないが、[bill-ion さんの作成した fork](https://github.com/bill-ion/tikzjax-live/) ならコメントが使える。通常の TikzJax は 2 バイト文字の表示は非対応。テキストは英語を使うのが無難。
-
-Jekyll で TikzJax を利用する場合、以下のように記述すればよい。それをさらに &#123;% raw %&#125; ... &#123;% endraw %&#125; で囲むこと。
-
-```html
-<script type="text/tikz">
-\begin{document}
-\begin{tikzpicture}
-\draw (0,0) circle (1in);
-\end{tikzpicture}
-\end{document}
-</script>
-```
-
-{% raw %}
-<script type="text/tikz">
-\begin{document}
-\begin{tikzpicture}
-\draw (0,0) circle (1in);
-\end{tikzpicture}
-\end{document}
-</script>
-{% endraw %}
-
 ## 指数
 
 ### 指数法則
