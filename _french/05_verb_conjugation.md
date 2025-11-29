@@ -144,7 +144,7 @@ aller は動詞としては「（～へ）行く」という意味で用いら�
 |  | tu es | /tyɛ/ | tu étais | /tyetɛ/ | tu sois | /tyswa/ |
 |  | il est | /ilɛ/ | il était | /iletɛ/ | il soit | /ilswa/ |
 |  | nous sommes | /nusɔm/ | nous étions | /nuzetjɔ̃/ | nous soyons | /nuswãjɔ̃/ |
-| être | vues êtes | /vuzɛt/ | vous étiez | /vuzetje/ | vous soyez | /vuswaje/ |
+| être | vous êtes | /vuzɛt/ | vous étiez | /vuzetje/ | vous soyez | /vuswaje/ |
 | ～だ、である | 複合過去形 |  | 単純未来形 |  | 命令法 |  |
 | été /ete/ | ils sont | /ilsɔ̃/ | ils étaient | /ilzetɛ/ | ils soient | /ilswa/ |
 |  | j'ai été | /ʒete/ | je serai | /ʒəsre/ |  |  |
