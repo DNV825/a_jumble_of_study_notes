@@ -76,381 +76,164 @@ aller は動詞としては「（～へ）行く」という意味で用いら�
 
 ## 5.6. 重要な動詞を覚えよう！
 
-### 5.6.1. 基本の動詞 4 種
+### 5.6.1. 基本の動詞 4 種 avoir, être, -er動詞, -ir動詞
 
-<table>
-  <tr><th>No</th><th>不定詞<br>意味<br>過去分詞</th><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td rowspan="13">No.1</td><td rowspan="13">avoir /avwar/<br>～を持つ<br>eu /y/</td><td>j'ai</td><td>/ʒe/</td><td>j'avais</td><td>/ʒavɛ/</td><td>j'aie</td><td>/ʒɛ/</td></tr>
-  <tr><td>tu as</td><td>/tya/</td><td>tu avais</td><td>/tyavɛ/</td><td>tu aies</td><td>/tyɛ/</td></tr>
-  <tr><td>il a</td><td>/ila/</td><td>il avait</td><td>/ilavɛ/</td><td>il ait</td><td>/ilɛ/</td></tr>
-  <tr><td>nous avons</td><td>/nuzavɔ̃/</td><td>nous avions</td><td>/nuzavjɔ̃/</td><td>nous ayons</td><td>/nuzɛjɔ̃/</td></tr>
-  <tr><td>vous avez</td><td>/vuzave/</td><td>vous aviez</td><td>/vuzavje/</td><td>vous ayez</td><td>/vuzɛje/</td></tr>
-  <tr><td>ils ont</td><td>/ilzɔ̃/</td><td>ils avaient</td><td>/ilzavɛ/</td><td>ils aient</td><td>/ilzɛ/</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>j'ai eu</td><td>/ʒe/ /y/</td><td>j'aurai</td><td>/ʒɔre/</td><td></td><td></td></tr>
-  <tr><td>tu as eu</td><td>/tya/ /y/</td><td>tu auras</td><td>/tyɔra/</td><td>aie</td><td>/ɛ/</td></tr>
-  <tr><td>il a eu</td><td>/ila/ /y/</td><td>il aura</td><td>/ilɔra/</td><td></td><td></td></tr>
-  <tr><td>nous avons eu</td><td>/nuzavɔ̃/ /y/</td><td>nous aurons</td><td>/nuzɔrɔ̃/</td><td>ayons</td><td>/ɛjɔ̃/</td></tr>
-  <tr><td>vous avez eu</td><td>/vuzave/ /y/</td><td>vous aurez</td><td>/vuzɔre/</td><td>ayez</td><td>/ɛje/</td></tr>
-  <tr><td>ils ont eu</td><td>/ilzɔ̃/ /y/</td><td>ils auront</td><td>/ilzɔrɔ̃/</td><td></td><td></td></tr>
-  <tr><td rowspan="14">No.2</td><td rowspan="14">être /ɛtr/<br>～だ、である<br>été /ete/</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>je suis</td><td>/ʒətɛ/</td><td>j'étais</td><td>/ʒetɛ/</td><td>je sois</td><td>/ʒəswa/</td></tr>
-  <tr><td>tu es</td><td>/tyɛ/</td><td>tu étais</td><td>/tyetɛ/</td><td>tu sois</td><td>/tyswa/</td></tr>
-  <tr><td>il est</td><td>/ilɛ/</td><td>il était</td><td>/iletɛ/</td><td>il soit</td><td>/ilswa/</td></tr>
-  <tr><td>nous sommes</td><td>/nuzetjɔ̃/</td><td>nous étions</td><td>/nuzetjɔ̃/</td><td>nous soyons</td><td>/nuswajɔ̃/</td></tr>
-  <tr><td>vous êtes</td><td>/vuzetje/</td><td>vous étiez</td><td>/vezetje/</td><td>vous soyez</td><td>/vuswaje/</td></tr>
-  <tr><td>ils sont</td><td>/ilzetɛ/</td><td>ils étaient</td><td>/ilzetɛ/</td><td>ils soient</td><td>/ilswa/</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>j'ai été</td><td>/ʒe/ /ete/</td><td>je serai</td><td>//</td><td></td><td></td></tr>
-  <tr><td>tu as été</td><td>/tya/ /ete/</td><td>tu seras</td><td>//</td><td>sois</td><td>//</td></tr>
-  <tr><td>il a été</td><td>//</td><td>il sera</td><td>//</td><td></td><td></td></tr>
-  <tr><td>nous avons été</td><td>//</td><td>nous serons</td><td>//</td><td>soyons</td><td>//</td></tr>
-  <tr><td>vous avez été</td><td>//</td><td>vous serez</td><td>//</td><td>soyez</td><td>//</td></tr>
-  <tr><td>ils ont été</td><td>//</td><td>ils seront</td><td>//</td><td></td><td></td></tr>
-  <tr><td rowspan="14">No.3</td><td rowspan="14">《er 動詞》<br>parler<br>～を話す<br>parlé</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>je parl<span style="color: #ff0000;">e</span></td><td>//</td><td>je parl<span style="color: #ff0000;">ais</span></td><td>//</td><td>je parl<span style="color: #ff0000;">e</span></td><td>//</td></tr>
-  <tr><td>tu parl<span style="color: #ff0000;">es</span></td><td>//</td><td>tu parl<span style="color: #ff0000;">ais</span></td><td>//</td><td>tu parl<span style="color: #ff0000;">es</span></td><td>//</td></tr>
-  <tr><td>il parl<span style="color: #ff0000;">e</span></td><td>//</td><td>il parl<span style="color: #ff0000;">ait</span></td><td>//</td><td>il parl<span style="color: #ff0000;">e</span></td><td>//</td></tr>
-  <tr><td>nous parl<span style="color: #ff0000;">ons</span></td><td>//</td><td>nous parl<span style="color: #ff0000;">ions</span></td><td>//</td><td>nous parl<span style="color: #ff0000;">ions</span></td><td>//</td></tr>
-  <tr><td>vous parl<span style="color: #ff0000;">ez</span></td><td>//</td><td>vous parl<span style="color: #ff0000;">iez</span></td><td>//</td><td>vous parl<span style="color: #ff0000;">iez</span></td><td>//</td></tr>
-  <tr><td>ils parl<span style="color: #ff0000;">ent</span></td><td>//</td><td>ils parl<span style="color: #ff0000;">aient</span></td><td>//</td><td>ils parl<span style="color: #ff0000;">ent</span></td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>j'ai parlé</td><td>//</td><td>je parle<span style="color: #ff0000;">rai</span></td><td>//</td><td></td><td></td></tr>
-  <tr><td>tu as parlé</td><td>//</td><td>tu parle<span style="color: #ff0000;">ras</span></td><td>//</td><td>parl<span style="color: #ff0000;">e</span></td><td>//</td></tr>
-  <tr><td>il a parlé</td><td>//</td><td>il parle<span style="color: #ff0000;">ra</span></td><td>//</td><td></td><td></td></tr>
-  <tr><td>nous aveons parlé</td><td>//</td><td>nous parle<span style="color: #ff0000;">rons</span></td><td>//</td><td>parl<span style="color: #ff0000;">ons</span></td><td>//</td></tr>
-  <tr><td>vous avez parlé</td><td>//</td><td>vous parle<span style="color: #ff0000;">rez</span></td><td>//</td><td>parl<span style="color: #ff0000;">ez</span></td><td>//</td></tr>
-  <tr><td>ils ont parlé</td><td>//</td><td>ils parle<span style="color: #ff0000;">ront</span></td><td>//</td><td></td><td></td></tr>
-  <tr><td rowspan="14">No.4</td><td rowspan="14">《ir 動詞》<br>finir<br>～を終える、終わる<br>fini</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>je fini<span style="color: #ff0000;">s</span></td><td>//</td><td>je finiss<span style="color: #ff0000;">ais</span></td><td>//</td><td>je finiss<span style="color: #ff0000;">e</span></td><td>//</td></tr>
-  <tr><td>tu fini<span style="color: #ff0000;">s</span></td><td>//</td><td>tu finiss<span style="color: #ff0000;">ais</span></td><td>//</td><td>tu finiss<span style="color: #ff0000;">es</span></td><td>//</td></tr>
-  <tr><td>il fini<span style="color: #ff0000;">t</span></td><td>//</td><td>il finiss<span style="color: #ff0000;">ait</span></td><td>//</td><td>il finiss<span style="color: #ff0000;">e</span></td><td>//</td></tr>
-  <tr><td>nous fini<span style="color: #ff0000;">ssons</span></td><td>//</td><td>nous finiss<span style="color: #ff0000;">ions</span></td><td>//</td><td>nous finiss<span style="color: #ff0000;">ions</span></td><td>//</td></tr>
-  <tr><td>vous fini<span style="color: #ff0000;">ssez</span></td><td>//</td><td>vous finiss<span style="color: #ff0000;">iez</span></td><td>//</td><td>vous finiss<span style="color: #ff0000;">iez</span></td><td>//</td></tr>
-  <tr><td>ils fini<span style="color: #ff0000;">ssent</span></td><td>//</td><td>ils finiss<span style="color: #ff0000;">aient</span></td><td>//</td><td>ils finiss<span style="color: #ff0000;">ent</span></td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>j'ai fini</td><td>//</td><td>je fini<span style="color: #ff0000;">rai</span></td><td>//</td><td></td><td></td></tr>
-  <tr><td>tu as fini</td><td>//</td><td>tu fini<span style="color: #ff0000;">ras</span></td><td>//</td><td>fini<span style="color: #ff0000;">s</span></td><td>//</td></tr>
-  <tr><td>il a fini</td><td>//</td><td>il fini<span style="color: #ff0000;">ra</span></td><td>//</td><td></td><td></td></tr>
-  <tr><td>nous avons fini</td><td>//</td><td>nous fini<span style="color: #ff0000;">rons</span></td><td>//</td><td>fini<span style="color: #ff0000;">ssons</span></td><td>//</td></tr>
-  <tr><td>vous avez fini</td><td>//</td><td>vous fini<span style="color: #ff0000;">rez</span></td><td>//</td><td>fini<span style="color: #ff0000;">ssez</span></td><td>//</td></tr>
-  <tr><td>ils ont fini</td><td>//</td><td>ils fini<span style="color: #ff0000;">ront</span></td><td>//</td><td></td><td></td></tr>
-</table>
+#### 5.6.1.1. avoir（問題）
+
+| 不定詞<br>意味<br>過去分詞 | 表記 | 発音 | 表記| 発音 | 表記 | 発音 |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| | 直説法現在形 |  | 半過去形 |  | 接続法現在形 |  |
+|  |  | /ʒe/ |  | /ʒavɛ/ |  | /jɛ/ |
+|  |  | /tyə/ |  | /tyavɛ/ |  | /tyɛ/ |
+|  |  | /ila/ |  | /ilavɛ/ |  | /ilz/ |
+|  |  | /nuzəvɔ̃/ |  | /nuzavjɔ̃/ |  | /nuzɛjɔ̃/ |
+|  |  | /vuzəave/ |  | /vuzavje/ |  | /vuzɛye/ |
+| avoir |  | /ilzɔ̃/ |  | /ilzavɛ/ |  | /ilzɛ/ |
+| ～を持つ | 複合過去形 |  | 単純未来形 |  | 命令法 |  |
+| eu /y/ |  | /ʒey/ |  | /jɔre/ |  |  |
+|  |  | /tyay/ |  | /tyɔra/ |  | /ɛ/ |
+|  |  | /ilay/ |  | /ilɔra/ |  |  |
+|  |  | /nuzavɔ̃y/ |  | /nuzɔrɔ̃/ |  | /ɛjɔ̃/ |
+|  |  | /vuzavey/ |  | /vuzɔre/ |  | /ɛje/ |
+|  |  | /ilzɔ̃y/ |  | /ilzɔrɔ̃/ |  |  |
+
+#### 5.6.1.2. avoir（解答）
+
+| 不定詞<br>意味<br>過去分詞 | 表記 | 発音 | 表記| 発音 | 表記 | 発音 |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| | 直説法現在形 |  | 半過去形 |  | 接続法現在形 |  |
+|  | J'ai | /ʒe/ | j'avais | /ʒavɛ/ | j'aie | /jɛ/ |
+|  | tu as | /tyə/ | tu avais | /tyavɛ/ | tu aies | /tyɛ/ |
+|  | il a | /ila/ | il avait | /ilavɛ/ | il ait | /ilz/ |
+|  | nous avons | /nuzəvɔ̃/ | nous avions | /nuzavjɔ̃/ | nous ayons | /nuzɛjɔ̃/ |
+|  | vous avez | /vuzəave/ | vous aviez | /vuzavje/ | vous ayez | /vuzɛye/ |
+| avoir | ils ont | /ilzɔ̃/ | ils avaient | /ilzavɛ/ | ils aient | /ilzɛ/ |
+| ～を持つ | 複合過去形 |  | 単純未来形 |  | 命令法 |  |
+| eu /y/ | j'ai eu | /ʒey/ | j'aurai | /jɔre/ |  |  |
+|  | tu as eu | /tyay/ | tu auras | /tyɔra/ | aie | /ɛ/ |
+|  | il a eu | /ilay/ | il aura | /ilɔra/ |  |  |
+|  | nous avons eu | /nuzavɔ̃y/ | nous aurons | /nuzɔrɔ̃/ | ayons | /ɛjɔ̃/ |
+|  | vous avez eu | /vuzavey/ | vous aurez | /vuzɔre/ | ayez | /ɛje/ |
+|  | ils ont eu | /ilzɔ̃y/ | ils auront | /ilzɔrɔ̃/ |  |  |
+
+#### 5.6.1.3. être（問題）
+
+| 不定詞<br>意味<br>過去分詞 | 表記 | 発音 | 表記| 発音 | 表記 | 発音 |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| | 直説法現在形 |  | 半過去形 |  | 接続法現在形 |  |
+|  |  | /ʒəsɥi/ |  | /ʒetɛ/ |  | /ʒəswa/ |
+|  |  | /tyɛ/ |  | /tyetɛ/ |  | /tyswa/ |
+|  |  | /ilɛ/ |  | /iletɛ/ |  | /ilswa/ |
+|  |  | /nusɔm/ |  | /nuzetjɔ̃/ |  | /nuswãjɔ̃/ |
+|  |  | /vuzɛt/ |  | /vuzetje/ |  | /vuswaje/ |
+| être |  | /ilsɔ̃/ |  | /ilzetɛ/ |  | /ilswa/ |
+| ～だ、である | 複合過去形 |  | 単純未来形 |  | 命令法 |  |
+| été /ete/ |  | /ʒete/ |  | /ʒəsre/ |  |  |
+|  |  | /tyəete/ |  | /tysra/ |  | /swa/ |
+|  |  | /ilaete/ |  | /ilsəra/ |  |  |
+|  |  | /nuzəvɔ̃ete/ |  | /nusrɔ̃/ |  | /swajɔ̃/ |
+|  |  | /vuzəavete/ |  | /vusre/ |  | /swaje/ |
+|  |  | /ilzɔ̃ete/ |  | /ilsərɔ̃/ |  |  |
+
+#### 5.6.1.4. être（解答）
+
+| 不定詞<br>意味<br>過去分詞 | 表記 | 発音 | 表記| 発音 | 表記 | 発音 |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| | 直説法現在形 |  | 半過去形 |  | 接続法現在形 |  |
+|  | je suis | /ʒəsɥi/ | j'étais | /ʒetɛ/ | je sois | /ʒəswa/ |
+|  | tu es | /tyɛ/ | tu étais | /tyetɛ/ | tu sois | /tyswa/ |
+|  | il est | /ilɛ/ | il était | /iletɛ/ | il soit | /ilswa/ |
+|  | nous sommes | /nusɔm/ | nous étions | /nuzetjɔ̃/ | nous soyons | /nuswãjɔ̃/ |
+| être | vues êtes | /vuzɛt/ | vous étiez | /vuzetje/ | vous soyez | /vuswaje/ |
+| ～だ、である | 複合過去形 |  | 単純未来形 |  | 命令法 |  |
+| été /ete/ | ils sont | /ilsɔ̃/ | ils étaient | /ilzetɛ/ | ils soient | /ilswa/ |
+|  | j'ai été | /ʒete/ | je serai | /ʒəsre/ |  |  |
+|  | tu as été | /tyəete/ | tu seras | /tysra/ | sois | /swa/ |
+|  | il a été | /ilaete/ | il sera | /ilsəra/ |  |  |
+|  | nous avons été | /nuzəvɔ̃ete/ | nous serons | /nusrɔ̃/ | soyons | /swajɔ̃/ |
+|  | vous avez été | /vuzəavete/ | vous serez | /vusre/ | soyez | /swaje/ |
+|  | ils ont été | /ilzɔ̃ete/ | ils seront | /ilsərɔ̃/ |  |  |
+
+#### 5.6.1.5. er 動詞（aimer）（問題）
+
+| 不定詞<br>意味<br>過去分詞 | 表記 | 発音 | 表記| 発音 | 表記 | 発音 |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| | 直説法現在形 |  | 半過去形 |  | 接続法現在形 |  |
+|  |  | /ʒɛm/ |  | /ʒemɛ/ |  | /ʒɛm/ |
+|  |  | /tyɛm/ |  | /tyemɛ/ |  | /tyɛm/ |
+|  |  | /ilɛm/ |  | /ilemɛ/ |  | /ilɛm/ |
+|  |  | /nuzemɔ̃/ |  | /nuzemjɔ̃/ |  | /nuzemjɔ̃/ |
+|  |  | /vuzeme/ |  | /vuzemje/ |  | /vuzemje/ |
+| aimer |  | /ilzɛm/ |  | /ilzemɛ/ |  | /ilzɛm/ |
+| ～を好む | 複合過去形 |  | 単純未来形 |  | 命令法 |  |
+| aimé /eme/ |  | /ʒem/ |  | /ʒɛmre/ |  |  |
+|  |  | /tyeme/ |  | /tyɛmra/ |  | /ɛm/ |
+|  |  | /ileme/ |  | /ilɛmra/ |  |  |
+|  |  | /nuzavɔ̃zeme/ |  | /nuzɛmrɔ̃/ |  | /emɔ̃/ |
+|  |  | /vuzaveeme/ |  | /vuzɛmre/ |  | /eme/ |
+|  |  | /ilzɔ̃zeme/ |  | /ilzɛmrɔ̃/ |  |  |
+
+#### 5.6.1.6. er 動詞（aimer）（解答）
+
+| 不定詞<br>意味<br>過去分詞 | 表記 | 発音 | 表記| 発音 | 表記 | 発音 |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| | 直説法現在形 |  | 半過去形 |  | 接続法現在形 |  |
+|  | j'aime | /ʒɛm/ | j'aimais | /ʒemɛ/ | j'aime | /ʒɛm/ |
+|  | tu aimes | /tyɛm/ | tu aimais | /tyemɛ/ | tu aimes | /tyɛm/ |
+|  | il aime | /ilɛm/ | il aimait | /ilemɛ/ | il aime | /ilɛm/ |
+|  | nous aimons | /nuzemɔ̃/ | nous aimions | /nuzemjɔ̃/ | nous aimions | /nuzemjɔ̃/ |
+| aimer | vous aimez | /vuzeme/ | vous aimiez | /vuzemje/ | vous aimiez | /vuzemje/ |
+| ～を好む | 複合過去形 |  | 単純未来形 |  | 命令法 |  |
+| aimé /eme/ | ils aiment | /ilzɛm/ | ils aimaient | /ilzemɛ/ | ils aiment | /ilzɛm/ |
+|  | J'ai aimé | /ʒem/ | j'aimerai | /ʒɛmre/ |  |  |
+|  | tu as aimé | /tyeme/ | tu aimeras | /tyɛmra/ | aime | /ɛm/ |
+|  | il a aimé | /ileme/ | il aimera | /ilɛmra/ |  |  |
+|  | nous avons aimé | /nuzavɔ̃zeme/ | nous aimerons | /nuzɛmrɔ̃/ | aimons | /emɔ̃/ |
+|  | vous avez aimé | /vuzaveeme/ | vous aimerez | /vuzɛmre/ | aimez | /eme/ |
+|  | ils ont aimé | /ilzɔ̃zeme/ | ils aimeront | /ilzɛmrɔ̃/ |  |  |
+
+#### 5.6.1.7. ir 動詞（finir）（問題）
+
+| 不定詞<br>意味<br>過去分詞 | 表記 | 発音 | 表記| 発音 | 表記 | 発音 |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| | 直説法現在形 |  | 半過去形 |  | 接続法現在形 |  |
+|  |  | /ʒ(ə)fini/ |  | /ʒ(ə)finisɛ/ |  | /ʒəfinis/ |
+|  |  | /tyfini/ |  | /tyfinisɛ/ |  | /tyfinis/ |
+|  |  | /ilfini/ |  | /ilfinisɛ/ |  | /ilfinis/ |
+|  |  | /nufinisɔ̃/ |  | /nufinisjɔ̃/ |  | /nufinisjɔ̃/ |
+| finir |  | /vufinise/ |  | /vufinisje/ |  | /vufinisje/ |
+| ～を終える、 |  | /ilfinis/ |  | /ilfinisɛ/ |  | /ilfinis/ |
+| 終わる | 複合過去形 |  | 単純未来形 |  | 命令法 |  |
+| fini /fini/ |  | /ʒefini/ |  | /ʒ(ə)finire/ |  |  |
+|  |  | /tyəfini/ |  | /tyfinira/ |  | /fini/ |
+|  |  | /ilafini/ |  | /ilfinira/ |  |  |
+|  |  | /nuzəvɔ̃fini/ |  | /nufinirɔ̃/ |  | /finisɔ̃/ |
+|  |  | /vuzəavefini/ |  | /vufinire/ |  | /finise/ |
+|  |  | /ilzɔ̃fini/ |  | /ilfinirɔ̃/ |  |  |
+
+#### 5.6.1.8. ir 動詞（finir）（解答）
+
+| 不定詞<br>意味<br>過去分詞 | 表記 | 発音 | 表記| 発音 | 表記 | 発音 |
+| :-- | :-- | :-- | :-- | :-- | :-- | :-- |
+| | 直説法現在形 |  | 半過去形 |  | 接続法現在形 |  |
+|  | je finis | /ʒ(ə)fini/ | je finissais | /ʒ(ə)finisɛ/ | je finisse | /ʒəfinis/ |
+|  | tu finis | /tyfini/ | tu finissais | /tyfinisɛ/ | tu finisses | /tyfinis/ |
+|  | il finit | /ilfini/ | il finissait | /ilfinisɛ/ | il finisse | /ilfinis/ |
+|  | nous finissons | /nufinisɔ̃/ | nous finissions | /nufinisjɔ̃/ | nous finissions | /nufinisjɔ̃/ |
+| finir | vous finissez | /vufinise/ | vous finissiez | /vufinisje/ | vous finissiez | /vufinisje/ |
+| ～を終える、 | ils finissent | /ilfinis/ | ils finissaient | /ilfinisɛ/ | ils finissent | /ilfinis/ |
+| 終わる | 複合過去形 |  | 単純未来形 |  | 命令法 |  |
+| fini /fini/ | j'ai fini | /ʒefini/ | je finirai | /ʒ(ə)finire/ |  |  |
+|  | tu as fini | /tyəfini/ | tu finiras | /tyfinira/ | finis | /fini/ |
+|  | il a fini | /ilafini/ | il finira | /ilfinira/ |  |  |
+|  | nous avons fini | /nuzəvɔ̃fini/ | nous finirons | /nufinirɔ̃/ | finissons | /finisɔ̃/ |
+|  | vous avez fini | /vuzəavefini/ | vous finirez | /vufinire/ | finissez | /finise/ |
+|  | ils ont fini | /ilzɔ̃fini/ | ils finiront | /ilfinirɔ̃/ |  |  |
 
 ### 5.6.2. 超重要動詞 10 選
 
-<table>
-  <tr><th>No</th><th>不定詞<br>意味<br>過去分詞</th><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td rowspan="13">No.1</td><td rowspan="13">aller<br>～に行く<br>allé</td><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.2</td><td rowspan="14">devoir<br>～しなければならない、<br>～に借りがある<br>dû</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.3</td><td rowspan="14">faire<br>～する<br>fait</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.4</td><td rowspan="14">partir<br>出発する<br>parti</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.5</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.6</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.7</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.8</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.9</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.10</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-</table>
+（工事中）
 
 ### 5.6.3. 重要動詞 12 選
 
-<table>
-  <tr><th>No</th><th>不定詞<br>意味<br>過去分詞</th><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td rowspan="13">No.1</td><td rowspan="13">attendre<br>～を待つ<br>attendu<br>(avoir)</td><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.2</td><td rowspan="14">devoir<br>～しなければならない、<br>～に借りがある<br>dû</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.3</td><td rowspan="14">faire<br>～する<br>fait</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.4</td><td rowspan="14">partir<br>出発する<br>parti</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.5</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.6</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.7</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.8</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.9</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.10</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.11</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td rowspan="14">No.12</td><td rowspan="14">xxx</td><th colspan="2">直説法現在形</th><th colspan="2">半過去形</th><th colspan="2">接続法現在形</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><th colspan="2">複合過去形</th><th colspan="2">単純未来形</th><th colspan="2">命令法</th></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>  
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-  <tr><td>a</td><td>//</td><td>b</td><td>//</td><td>c</td><td>//</td></tr>
-</table>
+（工事中）
