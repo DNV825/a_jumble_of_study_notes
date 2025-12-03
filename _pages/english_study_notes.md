@@ -6,6 +6,10 @@ category: Jekyll
 layout: post
 ---
 
+## SANTA アルク Web 版
+
+<https://ai.aitutorsanta.com/login>
+
 ## 心構え
 
 ビジネス英語は学問ではなく訓練。
