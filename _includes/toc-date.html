@@ -56,7 +56,7 @@
                         {% if collection.label == "posts" %}
                             {% assign reversed_posts = site[collection.label] | reverse %}
                         {% else %}
-                            {% assign reversed_posts = site[collection.label] %}
+                            {% assign reversed_posts = site[collection.label] | sort: "order" %}
                         {% endif %}
 
                         {% for post in reversed_posts %}
@@ -88,7 +88,7 @@
                         {% if collection.label == "posts" %}
                             {% assign reversed_posts = site[collection.label] | reverse %}
                         {% else %}
-                            {% assign reversed_posts = site[collection.label] | sort: "order" %}
+                            {% assign reversed_posts = site[collection.label] %}
                         {% endif %}
 
                         {% for post in reversed_posts %}
