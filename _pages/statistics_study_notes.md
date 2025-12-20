@@ -13,6 +13,25 @@ extra_css:
 extra_header_js: assets/tikzjax/tikzjax.js
 ---
 
+## 代表的な記号
+
+| 代表的な記号 | $LaTeX$ 記法 | 意味（英語） | 意味（日本語） |
+| --- | --- | --- | --- |
+| $M$ | `M` | Median | 中央値 |
+| $Q_1,$<br>$Q_2,$<br>$Q_3$ | `Q_1,`<br>`Q_2,`<br>`Q_3` | First Quartile (= 25%),<br> Second Quartile(= 50% (median),<br> Third Quartile (= 75%) | 第1四分位数、<br>第2四分位数、<br>第3四分位数<br>（四分位点、四分位） |
+| ${IOR}$ | `{IOR}` | Inner Quartile Range ($Q_3 - Q_1$) | 四分位範囲
+| $r$ | `r` | Correlation Coefficient | 相関係数 |
+| $r_{xy}$ | `r_{xy}` | - | $x$ と $y$ の相関関係、 他に $r(x, y)$ など |
+| $R^2$ | `R^2` | Coefficient of Determiration | 決定係数 |
+| $s^2$ | `s^2` | Scattering | 分散 |
+| $s$ | `s` | Standard diviation | 標準偏差（分散の正の平方根） |
+| $s^2_x, s_{xx}$ | `s^2_x, s_{xx}` | - | 観測値 $x_1, x_2, ..., x_n$ の分散 $\cfrac{\Sigma(x_{i} - \bar{x})^2}{n}$ |
+| $s_{xy}$ |`s_{xy}` | - | $x$ と $y$ の共分散 $\cfrac{\Sigma(x_i - \bar{x})(y_i - \bar{y})}{n}$
+| $\bar{x}$ | `\bar{x}` | - | 観測値 $x_1, x_2, ..., x_n$ の平均値、算術平均、読みは「エックスバー」 |
+| $z$ | `z` | - | $z$ 値、$z$ スコア、観測値を標準化（基準化）した値 |
+| $\alpha, \beta$ | `\alpha, \beta` | Regression Coefficient | 回帰直線の回帰係数 |
+| $\hat{\alpha}, \hat{\beta}$ | `\hat{\alpha}, \hat{\beta}` | Estimate Value | 回帰係数の推定値、読みは「アルファヘット」
+
 ## 基本的な計算
 
 ### 指数
