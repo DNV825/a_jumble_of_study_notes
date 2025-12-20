@@ -1,7 +1,9 @@
 ---
 title: Statistics study notes
 author: DNV825
+created: 2025-03-22
 date: 2025-03-22
+order: 3
 category: Jekyll
 layout: post
 extra_css:

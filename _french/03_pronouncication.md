@@ -1,7 +1,9 @@
 ---
 title: 3. pronouncication
 author: DNV825
+created: 2025-08-18
 date: 2025-08-18
+order: 3
 category: Jekyll
 layout: post
 ---

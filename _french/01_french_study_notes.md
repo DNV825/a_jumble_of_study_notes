@@ -1,7 +1,9 @@
 ---
 title: 1. French study notes
 author: DNV825
+created: 2025-08-16
 date: 2025-08-16
+order: 1
 category: Jekyll
 layout: post
 ---

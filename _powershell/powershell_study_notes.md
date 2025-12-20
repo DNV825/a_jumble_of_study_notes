@@ -1,11 +1,11 @@
 ---
 title: PowerShell study notes
 author: DNV825
-date: 2021-01-01
+created: 2021-01-24
+date: 2025-06-14
+order: 1
 category: Jekyll
 layout: post
-created: 2021-01-24
-updated: 2025-06-14
 ---
 
 文法やノウハウのメモ。

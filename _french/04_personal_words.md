@@ -1,7 +1,9 @@
 ---
 title: 4. personal words
 author: DNV825
+created: 2025-08-19
 date: 2025-08-19
+order: 4
 category: Jekyll
 layout: post
 ---

@@ -1,10 +1,11 @@
 ---
 title: 2. WSL2 Ollama
 author: DNV825
-date: 2025-01-02
+created: 2025-03-31
+date: 2025-03-31
+order: 2
 category: Jekyll
 layout: post
-created: 2025-03-31
 ---
 
 ## 2.1. Ollama + Open WebUI を Docker で動かす

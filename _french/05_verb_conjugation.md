@@ -1,7 +1,9 @@
 ---
 title: 5. verb conjugation
 author: DNV825
+created: 2025-08-20
 date: 2025-08-20
+order: 5
 category: Jekyll
 layout: post
 ---

@@ -1,7 +1,9 @@
 ---
 title: The rule of mahjong
 author: DNV825
-date: 2023-02-25
+created: 2023-02-25
+date: 2025-12-20
+order: 2
 category: Jekyll
 layout: post
 ---

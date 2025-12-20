@@ -1,7 +1,9 @@
 ---
 title: About others
 author: DNV825
+created: 2025-06-14
 date: 2025-06-14
+order: 1
 category: Jekyll
 layout: post
 ---

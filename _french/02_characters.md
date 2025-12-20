@@ -1,7 +1,9 @@
 ---
 title: 2. characters
 author: DNV825
+created: 2025-08-17
 date: 2025-08-17
+order: 2
 category: Jekyll
 layout: post
 ---

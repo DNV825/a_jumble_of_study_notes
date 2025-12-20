@@ -1,10 +1,11 @@
 ---
 title: PowerShell idiom study notes
 author: DNV825
-date: 2021-01-02
+created: 2021-01-24
+date: 2021-01-24
+order: 2
 category: Jekyll
 layout: post
-created: 2021-01-24
 ---
 
 ## ハッシュ化

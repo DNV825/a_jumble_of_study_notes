@@ -52,21 +52,27 @@ exclude:
 collections:
   pages:
     output: true
+    sort_by: order
     permalink: /:collection/:path/
   powershell:
     output: true
+    sort_by: order
     permalink: /:collection/:path/
   rust:
     output: true
+    sort_by: order
     permalink: /:collection/:path/
   docker:
     output: true
+    sort_by: order
     permalink: /:collection/:path/
   french:
     output: true
+    sort_by: order
     permalink: /:collection/:path/
   others:
     output: true
+    sort_by: order
     permalink: /:collection/:path/
 
 ordered_collections:

@@ -1,10 +1,11 @@
 ---
 title: 1. docker study notes
 author: DNV825
-date: 2025-01-01
+created: 2025-03-31
+date: 2025-03-31
+order: 1
 category: Jekyll
 layout: post
-created: 2025-03-31
 ---
 
 今度は WSL2 で docker を使っていろいろ試そう。
