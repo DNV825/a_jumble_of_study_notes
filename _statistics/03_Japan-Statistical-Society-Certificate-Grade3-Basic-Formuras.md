@@ -59,29 +59,29 @@ $$
 ### 3.2.3. 対数法則の証明
 
 $(1) \log_a{M} + \log_a{N} = \log_a{MN}$
-: $\log_a{M} = x, \space \log_a{N} = y$ と置くと、対数の定義より $a^x = M, a^y = N$ よって、
-  指数法則により $a^{x+y} = MN$ となる。
+: $\log_a{M} = x, \space \log_a{N} = y$ と置くと、対数の定義より $a^x = M, a^y = N$ よって、  
+  指数法則により $a^{x+y} = MN$ となる。  
   これは対数の定義より、 $\log_a{MN} = x + y$ であることを表す。
 
 $(2) \space \log_a{M^p} = p\log_a{M}$
-: $\log_a{M} = x$ と置くと、対数の定義より $a^x = M$ よって、指数法則を使うと $a^{px} = M^p$ となる。
+: $\log_a{M} = x$ と置くと、対数の定義より $a^x = M$ よって、指数法則を使うと $a^{px} = M^p$ となる。  
   これは対数の定義より、 $\log_a{M^p} = px$ となる。
 
 $(3) \space \log_a{\cfrac{1}{M}} = - \log_a{M}$
-: $(2)$ において、 $p = -1$ とすれば得られる。
+: $(2)$ において、 $p = -1$ とすれば得られる。  
   $\log_a{M^{-1}} = \log_a{\cfrac{1}{M}} = {-1}\log_a{M}$
 
 $(4) \space \log_a{M} - \log_a{N} = \log_a{\cfrac{M}{N}}$
-: $(1)$ において、 $N$ ではなく $\cfrac{1}{N}$ を指定すると、 $\log_a{M} + \underline{\log_a{\cfrac{1}{N}}} = \log_a{\left(M \cfrac{1}{N} \right)} = \log_a{\cfrac{M}{N}}$ となる。
+: $(1)$ において、 $N$ ではなく $\cfrac{1}{N}$ を指定すると、 $\log_a{M} + \underline{\log_a{\cfrac{1}{N}}} = \log_a{\left(M \cfrac{1}{N} \right)} = \log_a{\cfrac{M}{N}}$ となる。  
   下線部は $(3)$ より $-\log_a{N}$ になるため、 $\log_a{M} - \log_a{N} = \log_a{\cfrac{M}{N}}$ が成立する。
 
 $(5) \space \log_a{1} = 0$
 : $a^0 = 1$ であることから、対数の定義より $\log_a{1} = 0$ を得る。
 
 $(6) \space \log_a{b} = \cfrac{\log_c{b}}{\log_c{a}}$
-: 対数の定義より、 $a^p = b \Leftrightarrow \log_a{b} = p$ である。
-  このとき、左側の式の $p$ に $\log_a{b}$ を代入すると、 $a^{log_a{b}} = b$ が成立する。
-  ここで、両辺の対数をとる。対数の底は $c$ とする。すると、
+: 対数の定義より、 $a^p = b \Leftrightarrow \log_a{b} = p$ である。  
+  このとき、左側の式の $p$ に $\log_a{b}$ を代入すると、 $a^{log_a{b}} = b$ が成立する。  
+  ここで、両辺の対数をとる。対数の底は $c$ とする。すると、  
   $$
   \begin{align*}
   a^{\log_a{b}} &= b \\
