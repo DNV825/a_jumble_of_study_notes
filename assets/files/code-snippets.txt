@@ -260,4 +260,11 @@
 		],
 		"description": "Œ (Latin capital ligature)"
 	},
+	"Phonetic Symbols[ʁ]": {
+		"prefix": "\\small-capital-turned-R",
+		"body": [
+			"ʁ"
+		],
+		"description": "ʁ (Small capital turned R)"
+	},
 }
