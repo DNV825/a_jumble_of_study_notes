@@ -122,7 +122,7 @@ CanonicalGroupLimited.Ubuntu22.04LTS_79rhkp1fndgsc
 以下のコマンドで上記のパスを開けるはず。ただし、複数の WSL ディストリビューションをインストールしている場合、すべてのフォルダを開いてしまう。
 
 ```powershell
-Get-AppxPackage -Name "*Ubuntu*" | % { start $env:LOCALAPPDATA\Packages\$($_.PackageFamilyName)\LocalState
+Get-AppxPackage -Name "*Ubuntu*" | % { start $env:LOCALAPPDATA\Packages\$($_.PackageFamilyName)\LocalState }
 ```
 
 このフォルダには `ext4.vhdx`というファイルが配置されており、これが WSL のディスクの実体である。このファイルを大きくすればディスクスペースを拡張することができる。
