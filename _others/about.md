@@ -16,6 +16,13 @@ layout: post
 
 <https://proud-bay-0f2cc7400.2.azurestaticapps.net/>
 
+## GitHub Copilot について
+
+- (Microsoft Applied Skills: GitHub Copilotを使用して AI 支援型の開発を加速する)[https://learn.microsoft.com/ja-jp/credentials/applied-skills/accelerate-app-development-by-using-github-copilot/]
+- [GH-300 GitHub Copilot 認定試験](https://learn.microsoft.com/ja-jp/credentials/certifications/github-copilot/?practice-assessment-type=certification)
+- [Claude Code Skillsで開発ワークフローを効率化している話](https://zenn.dev/berry_blog/articles/8d1b2c9216b4e9)
+- [Claude Codeで100個のSkillを育てた全記録 ── コンテキストエンジニアリング実践4ヶ月の軌跡](https://zenn.dev/takuyanagai0213/articles/claude-code-100-skills-full-record)
+
 ## MathJax 関係のメモ
 
 ### 数式が表示されなくなったら
