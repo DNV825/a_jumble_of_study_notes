@@ -12,6 +12,10 @@ layout: post
 
 <https://ai.aitutorsanta.com/login>
 
+## 役立つかもリンク
+
+<https://www.youtube.com/watch?v=nEpewJsEgUg>
+
 ## 心構え
 
 ビジネス英語は学問ではなく訓練。
